@@ -2,4 +2,17 @@ body {
     background-color:gray;
     color:black;
 }
-
+.nav-bar{
+    display:flex;
+    width:80%;
+    font-size:30px;
+    align-items: center;
+    justify-content: center;
+    border:2px solid yellow;
+    margin-left:auto;
+    margin-right:auto;
+}
+.logo {
+    height:500px;
+    width:500px;
+}
