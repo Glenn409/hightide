@@ -5,27 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>HighTide</title>
 </head>
 <body>
     <!-- nav bar -->
-    <nav class='nav-bar'>
-        <div class='nav-button'>
-            <p>Home</p>
-        </div>
-        <div class='nav-button'>
-            <p>Events</p>
-        </div>
+    <div class='banner'>
         <image class='logo' src='images\mainlogotransparent.png' />
-        <div class='nav-button'>
-            <p>Menu</p>
-        </div>
-        <div class='nav-button'>
-            <p>Employment</p>
-        </div>
-        
+    </div>
 
+    <nav class='nav-bar'>
+        <div class='size-div'>
+            <div class='nav-list'>
+                <div class='nav-button'>
+                    <p id='nav-home'>Home</p>
+                </div>
+                <div class='nav-button'>
+                    <p id='nav-event'>Events</p>
+                </div>
+                <div class='nav-button'>
+                    <p id='nav-menu'>Menu</p>
+                </div>
+                <div class='nav-button'>
+                    <p id=nav-employment>Employment</p>
+                </div>
+            </div>
+        </div>
     </nav>
+
+    <div class='container'>
+        <div class='home-container'>
+            test
+        </div>
+        <div class='event-container'>
+            <div data-tockify-component="calendar" data-tockify-calendar="hightide21"></div>
+            <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+        </div>
+
+    </div>
+
+
     <div class='example'>
         <a href='http://www.coconutsatthelake.com/'>coconuts</a>
         <a href='http://shadygators.com/'>shady gators</a>
@@ -33,7 +52,7 @@
         <a href='https://dogdays.ws/'>dog days</a>
         <a href='https://shortypantslounge.com/'>shortypants</a>
         <a href='http://thefishandcompany.com/'>fish n co</a>
-        <a href='https://www.bearbottomresort.com/'>bear bottoms</a>
+        <a href='https://www.bearbottomresort.com/'>bear bot    toms</a>
         <a href='http://www.picklehead.com/wayne/naughtyfish.html'>naughty fish</a>
         <a href='https://www.camdenonthelake.com/eat-drink/h-toads'> h toads great calendar</a>
         <a href=''></a>
@@ -46,4 +65,5 @@
         <a href=''></a>
     </div>
 </body>
+<script type="text/javascript" src="/javascript/index.js"></script>
 </html>
