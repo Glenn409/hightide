@@ -1,6 +1,9 @@
 body {
-    background-color:#2e8faf;
-    color:black;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,234,255,1) 52%, rgba(252,252,252,1) 100%);
+    color:#1E1E1E;
+    /* font-family: Comic Sans MS;
+    font-weight: 500; */
 }
 
 #employment_link {
@@ -10,7 +13,9 @@ body {
 .banner{
     width:100%;
     height:600px;
-    border:1px solid red;
+    border-bottom:3px solid #1e1e1e;
+    background-image: url('/images/2017-10-16\ 101226.jpg');
+    background-position: 50% 70%;
 }
 .size-div{
     margin-right:auto;
@@ -23,10 +28,13 @@ body {
     margin-right:auto;
 }
 .nav-bar{
-    background-color:#1E1E1E;
-    color:white;
+    margin-bottom:100px;
+    height:120px;
+    background-color:#1e1e1e;
+    color:black;
     display:flex;
-    font-size:30px;
+    align-items: center;
+    font-size:35px;
     align-items: center;
     margin-left:auto;
     margin-right:auto;
@@ -34,18 +42,47 @@ body {
     padding-bottom:10px;
 }
 .nav-button{
+    display:flex;
+    align-items: center;
     margin-right:5px;
     margin-left:5px;
     height:40px;
 }
+.nav-button p{
+    background: -webkit-linear-gradient(#eee, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:40px;
+    font-weight: 600;
+}
 .nav-button:hover{
     cursor:pointer;
-    border-bottom:1px solid whitea;
+    border-bottom:1px solid red;
 }
 .nav-list {
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
     display:flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 
+}
+#circle-logo{
+    display:block;
+    max-height:250px;
+    border:5px solid red;
+    height:250px;
+    border-radius: 50%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(140,236,255,1) 46%, rgba(128,234,255,1) 52%, rgba(252,252,252,1) 100%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-logo{
+    height:200px;
+    /* width:400px; */
 }
 .logo {
     height:350px;
@@ -61,6 +98,8 @@ body {
 }
 
 .first-footer{
+    border-top:3px solid red;
+    border-bottom:3px solid #b6ffff;
     height:250px;
     background-color:#1E1E1E;
     display:flex;
@@ -84,4 +123,30 @@ body {
     width:auto;
 }
 .footer1-img img{
+}
+
+footer {
+    height:200px;
+    background-color:#0094ba;
+    color:white;
+    font-size:22px;
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,234,255,1) 52%, rgba(252,252,252,1) 100%); */
+}
+.footer-container{
+    height: 100%;
+    display:flex;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: space-around;
+    align-items: center;
+    color:black;
+    text-align: center;
+}
+.footer-container h1{
+    font-size:35px;
+    margin-bottom:15px;
+    border-bottom:2px solid black;
+    /* font-weight:00; */
+    padding-bottom:8px;
 }
