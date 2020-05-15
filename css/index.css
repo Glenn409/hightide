@@ -1,21 +1,27 @@
 body {
     background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,234,255,1) 52%, rgba(252,252,252,1) 100%);
-    color:#1E1E1E;
-    /* font-family: Comic Sans MS;
-    font-weight: 500; */
+    /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,234,255,1) 52%, rgba(252,252,252,1) 100%); */
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(128,234,255,1) 15%, rgba(128,234,255,1) 85%, rgba(252,252,252,1) 100%);    font-weight: 500; */
+    
 }
 
 #employment_link {
     color: inherit;
     text-decoration: inherit;
 }
-.banner{
+.banner1{
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
     background-image: url('/images/2017-10-16\ 101226.jpg');
     background-position: 50% 70%;
+}
+.banner2{
+    width:100%;
+    height:600px;
+    border-bottom:3px solid #1e1e1e;
+    background-image: url('/images/redhead-lake-of-the-ozarks.jpg');
+    background-size: 100%;
 }
 .size-div{
     margin-right:auto;
@@ -28,6 +34,8 @@ body {
     margin-right:auto;
 }
 .nav-bar{
+    font-family: 'Patua One', cursive;
+    font-weight: 300;
     margin-bottom:100px;
     height:120px;
     background-color:#1e1e1e;
@@ -53,14 +61,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:40px;
-    font-weight: 600;
 }
 .nav-button:hover{
     cursor:pointer;
     border-bottom:1px solid red;
 }
 .nav-list {
-    width:80%;
+    width:90%;
     margin-left:auto;
     margin-right:auto;
     display:flex;
@@ -70,6 +77,7 @@ body {
 }
 #circle-logo{
     display:block;
+    z-index: 1;
     max-height:250px;
     border:5px solid red;
     height:250px;
@@ -92,9 +100,6 @@ body {
     /* display:none; */
     margin-left:auto;
     margin-right:auto;
-}
-.home-container{
-    
 }
 
 .first-footer{
@@ -122,8 +127,7 @@ body {
     height: 100px;
     width:auto;
 }
-.footer1-img img{
-}
+
 
 footer {
     height:200px;
@@ -149,4 +153,118 @@ footer {
     border-bottom:2px solid black;
     /* font-weight:00; */
     padding-bottom:8px;
+}
+.content-container{
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    margin-bottom:100px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4); */
+}
+#menu-header-container{
+    background-color: #1E1E1E;
+    font-size:40px;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:30px;
+}
+#menu-header{
+    display:flex;
+    font-family: 'Patua One', cursive;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size:50px;
+    font-weight: 300;
+    background: -webkit-linear-gradient(#eee, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#menu-header img{
+    width:300px;
+}
+.menu-row{
+    display:flex;
+    font-size:25px;
+    line-height: 1.5;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+    align-items: center;
+}
+.menu-row p{
+    padding-left:10px;
+    padding-right:10px;
+}
+.menu-row img{
+    width:350px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.redheads-row {
+    width:80%;
+    border-top:3px solid #1E1E1E;
+    border-bottom:3px solid #1E1E1E;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.menu-container{
+    /* border:3px solid #1E1E1E; */
+    background: rgb(255,95,95);
+    background: linear-gradient(0deg, rgba(255,95,95,0.4150035014005602) 0%, rgba(255,255,255,1) 100%);
+    padding-bottom:20px;
+}
+.home-container{
+    /* border:2px solid black; */
+
+}
+.home-row{
+    border-top:2px solid #1e1e1e;
+    border-bottom:2px solid #1e1e1e;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+}
+.top-nav{
+    background-color:#1e1e1e;
+    height:60px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-logo{
+    border:2px solid grey;
+    display:block;
+    max-height:300px;
+    background-color:#1e1e1e;
+    padding-top:90px;
+    /* padding-right:10px; */
+    padding-left:20px;
+    padding-bottom:15px;
+    border-bottom-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 110px;
+    /* max-height:200px; */
+}
+
+.top-button{
+    font-family: sans-serif;
+    color:white;
+    padding-right:10px;
+    padding-left:10px;
+    color:gray;
+    font-size:18px;
+    border-left:1px solid grey;
+}
+.top-button a{
+    text-decoration: none;
+    color:#F5F5F5;    
+}
+.top-button a:hover{
+    color:lightgrey;
 }
