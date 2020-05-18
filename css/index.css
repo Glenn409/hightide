@@ -85,7 +85,7 @@ body {
     transform: scaleX(0);
     transform-origin: center;
 }
-.nav-button p:hover{
+.nav-button p:hover {
     cursor:pointer;
     color: #95a5a6;
 }
@@ -128,6 +128,7 @@ body {
 }
 .event-container{
     /* display:none; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     margin-left:auto;
     margin-right:auto;
 }
@@ -217,59 +218,35 @@ footer {
     font-weight: 600;
     margin-left:auto;
     margin-right:auto;
-    padding-top:10px;
-    padding-bottom:10px;
-    margin-bottom:30px;
-}
-#menu-header{
     display:flex;
-    font-family: 'Patua One', cursive;
-    align-items: center;
     justify-content: space-around;
-    text-align: center;
+    margin-bottom:30px;
+    width:100%;
+}
+
+.menu-header{
+    position: relative;
+    /* width:100%; */
+    display:flex;
+    font-family: 'minya_nouvelleregular',sans-serif;
+    align-items: center;
+    justify-content:center;
     font-size:50px;
     font-weight: 300;
     background: -webkit-linear-gradient(#eee, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-#menu-header img{
-    width:300px;
-}
-.menu-row{
-    display:flex;
-    font-size:25px;
-    line-height: 1.5;
-    width:75%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:20px;
-    align-items: center;
-}
-.menu-row p{
-    padding-left:10px;
-    padding-right:10px;
-}
-.menu-row img{
-    width:350px;
-    padding-left:10px;
-    padding-right:10px;
-}
-.redheads-row {
-    width:80%;
-    border-top:3px solid #1E1E1E;
-    border-bottom:3px solid #1E1E1E;
-    padding-top: 20px;
-    padding-bottom:20px;
-}
-.menu-container{
-    background: rgb(255,95,95);
-    background: linear-gradient(0deg, rgba(255,95,95,0.4150035014005602) 0%, rgba(255,255,255,1) 100%);
-    padding-bottom:20px;
+    /* margin-bottom:20px; */
 }
 
+
+.menu-container{
+
+}
+.menu-display-container{
+    background:#464646;
+    padding-bottom:20px;
+}
 .home-first-row{
     font-family:'minya_nouvelleregular',sans-serif;
     border-top:3px solid #1e1e1e;
@@ -314,6 +291,12 @@ footer {
     border-right:1px solid grey;
     display:flex;
     align-items: center;
+}
+.top-left-button i{
+    color:gray;
+    padding-right:0px !important;
+    margin-right:0px !important;
+    border:none !important;
 }
 .top-logo{
     z-index:1;
@@ -521,7 +504,7 @@ i {
     border-right:1px solid #3b5998;
 } */
 .twitter{
-    background-color:#55ACEE;
+    background-color:#1C9CEA;
     color:white;
 }
 .twitter:hover{
@@ -573,4 +556,210 @@ i {
 
 .footer-lady img{
 height:150px;
+}
+.food,.drink{
+    cursor:pointer;
+}
+
+#foodheader,#drinkheader{
+    padding-bottom:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+#foodheader{
+    border-bottom:4px solid #ff3030;
+}
+#drinkheader{
+    border-bottom:4px solid #1E1E1E;
+}
+.menu-content{
+    margin-bottom:20px;
+}
+.food-content{
+    width:90%;
+    display:flex;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: white;
+    border:2px solid white;
+}
+.food-categories{
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'minya_nouvelleregular',sans-serif;
+    width:120px;
+}
+.food-categories h1{
+    background-color:white;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:10px;
+    font-size:28px;
+    border-bottom:2px solid black;
+    border-right:2px solid black;
+}
+.food-categories h1:hover{
+    cursor:pointer;
+    color:white;
+    background-color:#ff3030;
+}
+#burgers {
+    color:white;
+    background-color:#ff3030;
+}
+.food-display-container{
+    height:100%;
+    width:90%;
+}
+.food-display{
+    width:80%;
+    background-color: white;
+}
+.menu-section{
+    font-family: 'minya_nouvelleregular',sans-serif;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    background:white;
+    height:80px;
+    border-bottom: 2px solid #1E1E1E;
+}
+#top-category{
+    padding:0px 0px 0px 0px ;
+    height:80px;
+}
+.food-name{
+    font-family: 'minya_nouvelleregular',sans-serif;
+    padding-top:10px;
+    text-align: center;
+    padding-bottom:10px;
+    font-size:22px;
+    font-weight: 600;
+    border-bottom:1px solid black;
+}
+.food-description{
+    padding-top:5px;
+    padding-left:10px;
+    padding-bottom:20px;
+    font-size:16px;
+}
+#price{
+    padding-left:15px;
+    font-size:18px;
+    font-weight: bold;
+}
+.left-food,.right-food{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.burgers-menu{
+    display:flex;
+    height: 100%;
+    background-color:white;
+}
+
+.redheads-row {
+    background:#1e1e1e;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height:400px; */
+    margin-top:20px;
+    border-top:3px solid red;
+    border-bottom:3px solid ;
+    padding-top: 20px;
+    padding-bottom:20px;
+    margin-bottom:20px;
+    color:white;
+
+    font-family: 'minya_nouvelleregular',sans-serif;
+    font-size:30px;
+}
+.redheads-header{
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:flex;
+    font-size:40px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom:40px;
+}
+.redheads-header img{
+    width:30%;
+}
+.redheads-ad{
+    display:flex;
+}
+#more{
+    width:100%;
+}
+#more h1{
+    text-align: center;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:2px solid #1e1e1e;
+}
+.food-box{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.food-banner{
+    position: relative;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4); */
+}
+.food-banner .food-img{
+    width:250px;
+    height:250px;
+    border:5px solid black;
+    border-radius: 50%;
+    background-color:black;
+}
+.img1{
+    background-image: url('/images/redhead-burger.jpg');
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-size:150%;
+}
+}
+.img2{
+    background-image: url('/images/redhead-burger.jpg');
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+    background-size:150%;
+}
+.img3{
+    background-image: url('/images/steaks_on_grill1.jpg');
+    /* background-position:50% 50%; */
+    background-repeat: no-repeat;
+    background-size:110%;
+}
+
+
+.food-banner p{
+    z-index: 1;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:3%;
+    background-color:rgba(0,0,0,1);
+    color:white;
+    font-size:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.redheads-ad img{
+    width:auto;
+    height:300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }

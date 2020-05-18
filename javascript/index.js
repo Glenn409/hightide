@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // $('.event-container').show()
+    $('.drink-content').hide()
     $('.event-container').hide()
     $('.menu-container').hide()
     $('.banner2').hide()
@@ -51,4 +52,18 @@ $('#nav-menu').on('click',function(){
     $('.home-container').hide()
     $('.menu-container').show()
     $('#nav-menu').css('border-bottom','4px solid #ff3030')
+})
+
+$('.food').on('click',function(){
+    $('#drinkheader').css('border-bottom','4px solid #1e1e1e')
+    $('.drink-content').hide()
+    $('.food-content').show()
+    $('#foodheader').css('border-bottom','4px solid #ff3030')
+})
+$('.drink').on('click',function(){
+    $('.food-content').hide()
+    $('.drink-content').show()
+    $('#foodheader').css('border-bottom','4px solid #1e1e1e')
+    $('.food').css('background-color','gray')
+    $('#drinkheader').css('border-bottom','4px solid #ff3030')
 })

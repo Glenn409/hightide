@@ -1,26 +1,4 @@
-List of everything i wanted included
-
-    1. events
-        - which shows a calendar visual editable
-        -using tockify
-
-    2. menu
-
-    3. restaraunt info
-        - address 
-        - #number
-        - mile marker
-        - hours 
-
-    4. footer icons
-        -twitter
-        -facebook
-        -trip advisors
-
-    5. about section
-
-    6. contact page
-        - send a email
-        - list of emails
-        - #number
-        - mapping api
+Todo list
+- contact page
+- animations on food/drink menu change/hover
+- media queries
