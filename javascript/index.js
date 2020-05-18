@@ -26,20 +26,29 @@ $(document).ready(function(){
         
     },4000)
 })
+$('.nav-button-p').on('click',function(){
+    $('#nav-home').css('border-bottom','4px solid #1e1e1e')
+    $('#nav-event').css('border-bottom','4px solid #1e1e1e')
+    $('#nav-menu').css('border-bottom','4px solid #1e1e1e')
+})
 $('#nav-event').on('click',function(){
     $('.home-container').hide()
     $('.menu-container').hide()
     $('.event-container').show()
+    $('#nav-event').css('border-bottom','4px solid #ff3030')
 })
 
 $('#nav-home').on('click', function(){
     $('.event-container').hide()
     $('.menu-container').hide()
     $('.home-container').show()
+    $('#nav-home').css('border-bottom','4px solid #ff3030')
+
 })
 
 $('#nav-menu').on('click',function(){
     $('.event-container').hide()
     $('.home-container').hide()
     $('.menu-container').show()
+    $('#nav-menu').css('border-bottom','4px solid #ff3030')
 })
