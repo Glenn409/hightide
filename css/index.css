@@ -11,7 +11,7 @@ body {
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('/images/banner1rh.jpg');
+    background-image: url('images/banner1rh.jpg');
     background-size:100%;
     background-position: 50% 70%;
 }
@@ -19,7 +19,7 @@ body {
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('/images/banner2.jpeg');
+    background-image: url('images/banner2.jpeg');
     background-size: 100%;
     background-position: 50% 70%;
 }
@@ -27,7 +27,7 @@ body {
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('/images/banner3.jpg');
+    background-image: url('images/banner3.jpg');
     background-size: 100%;
     background-position: 50% 30%;
 }
