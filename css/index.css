@@ -62,6 +62,7 @@ body {
     margin-right:5px;
     margin-left:5px;
     height:40px;
+    
 }
 
 .nav-button p{
@@ -666,7 +667,10 @@ height:150px;
 }
 
 .redheads-row {
-    background:#1e1e1e;
+    background-image: url('../images/133a5710.jpg');
+    background-size:130%;
+    background-position: 10% 45%;
+    border-radius: 25px;
     width:100%;
     display:flex;
     flex-direction: column;
@@ -674,25 +678,31 @@ height:150px;
     align-items: center;
     /* height:400px; */
     margin-top:20px;
-    border-top:3px solid red;
-    border-bottom:3px solid ;
-    padding-top: 20px;
-    padding-bottom:20px;
+    /* border-top:3px solid red; */
     margin-bottom:20px;
     color:white;
 
     font-family: 'minya_nouvelleregular',sans-serif;
     font-size:30px;
 }
+.transparent-container{
+    border:2px solid #283234;
+    border-radius: 25px;
+    background:rgba(0,0,0,.8);
+    width:100%;
+    height:100%;
+}
 .redheads-header{
     width:100%;
-    padding-top:20px;
+    padding-top:30px;
     padding-bottom:20px;
     display:flex;
     font-size:40px;
     align-items: center;
     justify-content: space-around;
     margin-bottom:40px;
+    border-bottom:1px solid white;
+
 }
 .redheads-header img{
     width:30%;
@@ -703,11 +713,15 @@ height:150px;
 #more{
     width:100%;
 }
-#more h1{
+.redheads-header h1{
     text-align: center;
     margin-bottom:10px;
     padding-bottom:10px;
-    border-bottom:2px solid #1e1e1e;
+    
+
+.redheads-header{
+    border-bottom:1px solid white;
+
 }
 .food-box{
     width:100%;
