@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.drink-content').hide()
     $('.event-container').hide()
     $('.menu-container').hide()
+    $('.contact-container').hide()
     $('.banner2').hide()
     $('.banner3').hide()
     let num = 1;
@@ -27,6 +28,14 @@ $(document).ready(function(){
         
     },4000)
 })
+function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+//------------NavBar jquery
 $('.nav-button-p').on('click',function(){
     $('#nav-home').css('border-bottom','4px solid #1e1e1e')
     $('#nav-event').css('border-bottom','4px solid #1e1e1e')
@@ -53,7 +62,15 @@ $('#nav-menu').on('click',function(){
     $('.menu-container').show()
     $('#nav-menu').css('border-bottom','4px solid #ff3030')
 })
+$('#nav-contact').on('click',function(){
+    $('.event-container').hide()
+    $('.home-container').hide()
+    $('.menu-container').hide()
+    $('.contact-container').show()
+})
 
+
+// -----------------Menu jquery -------------
 $('.food').on('click',function(){
     $('#drinkheader').css('border-bottom','4px solid #1e1e1e')
     $('.drink-content').hide()
