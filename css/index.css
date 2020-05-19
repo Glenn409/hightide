@@ -771,12 +771,17 @@ height:150px;
     padding-top:20px;
     padding-bottom:20px;
     border-bottom:2px solid #283234;
+    align-items: center;
 }
 .contact-left{
     display:flex;
     align-items: center;
+    width:45%;
+    height:600px;
 }
 iframe{
+    height:100%;
+    width:100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);=
 }
 .contact-right{
