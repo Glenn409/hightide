@@ -28,14 +28,8 @@ $(document).ready(function(){
         
     },4000)
 })
-function myMap() {
-    var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
-      zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-//------------NavBar jquery
+
+//------------NavBar jquery------------
 $('.nav-button-p').on('click',function(){
     $('#nav-home').css('border-bottom','4px solid #1e1e1e')
     $('#nav-event').css('border-bottom','4px solid #1e1e1e')
@@ -44,6 +38,7 @@ $('.nav-button-p').on('click',function(){
 $('#nav-event').on('click',function(){
     $('.home-container').hide()
     $('.menu-container').hide()
+    $('.contact-container').hide()
     $('.event-container').show()
     $('#nav-event').css('border-bottom','4px solid #ff3030')
 })
@@ -51,6 +46,7 @@ $('#nav-event').on('click',function(){
 $('#nav-home').on('click', function(){
     $('.event-container').hide()
     $('.menu-container').hide()
+    $('.contact-container').hide()
     $('.home-container').show()
     $('#nav-home').css('border-bottom','4px solid #ff3030')
 
@@ -59,6 +55,7 @@ $('#nav-home').on('click', function(){
 $('#nav-menu').on('click',function(){
     $('.event-container').hide()
     $('.home-container').hide()
+    $('.contact-container').hide()
     $('.menu-container').show()
     $('#nav-menu').css('border-bottom','4px solid #ff3030')
 })
