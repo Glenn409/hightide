@@ -959,3 +959,19 @@ textarea{
         width:100%;
     }
 }
+@media only screen and (max-width:1400px){
+    #nav-logo{
+        height:70%;
+    }
+}
+@media only screen and (max-width:1275px){
+    #nav-logo{
+        height:60%;
+    }
+    .home-content-box{
+        width:325px;
+    }
+    .home-content-box img{
+        width:100%;
+    }
+}
