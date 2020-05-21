@@ -938,3 +938,24 @@ textarea{
     height:180px;
     resize:none;
 }
+
+@media only screen and (max-width:1600px){
+    .top-nav-container{
+        width:100%;
+    }
+    .top-nav-left{
+        padding-left:20px;
+    }
+    .size-div{
+        width:100%;
+    }
+    .container{
+        width:100%;
+    }
+    .first-footer-container{
+        width:100%;
+    }
+    .footer-container{
+        width:100%;
+    }
+}
