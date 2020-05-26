@@ -7,6 +7,7 @@
     <link rel='stylesheet' type='text/css' href='css/Fonts/MinyaNouvelle/stylesheet.css'>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="https://kit.fontawesome.com/99839c4b92.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Patua+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,11 +22,11 @@
                     <p id='milemarker'>21</p>
                     <p>Mile Marker</p>
                 </div>
-                <div class="top-left-button">
+                <div class="top-left-button phone-number">
                     <p><i class="fas fa-phone fa-flip-horizontal"></i> : 573-693-1525</p>
                 </div>
             </div>
-            <div class='top-nav-right'>
+            <div class='top-nav-right desktop'>
                 <div class='top-button'>
                     <a href='http://www.redheadyachtclub.com/rentals.html' target='_blank'>Rentals</a>
                 </div>
@@ -41,14 +42,19 @@
                 <div class='top-logo'>
                     <image src='images/girllg.png'/>
                 </div>
-
+            </div>
+            <div class='top-nav-right-mobile mobile'>
+                <div class='top-button'><i class="fas fa-bars"></i></div>
+                <div class='top-logo'>
+                    <image src='images/girllg.png'/>
+                </div>
             </div>
         </div>
     </div>
     <!-- banner that rotates -->
-    <div class='banner1'></div>
-    <div class='banner2'></div>
-    <div class="banner3"></div>
+    <div class='banner banner1'></div>
+    <div class='banner banner2'></div>
+    <div class="banner banner3"></div>
 
     <nav class='nav-bar'>
         <div class='size-div'>
@@ -79,7 +85,7 @@
             <div class='home-container'>
                 <div class='grand-opening-container'>
                     <image src='images/girllg.png'/>
-                    <p>Grand Opening June 11th!</p>
+                    <p>Grand Opening in June</p>
                 </div>
                 <div class="home-first-row">
                     <div class='home-content-box'>
@@ -87,23 +93,22 @@
                             <image src='images/img_4182-2.jpg'></image>
                             <h1 class='img-banner'>Pool Bars</h1>
                         </div>
-                        <p>Lorem ☺ipsum dolor, sit amet consecteicia temporibus ipsum laborum rerum sed est molestiae quasi, esse adipisci?</p>
+                        <!-- <p>Lorem ☺ipsum dolor, sit amet consecteicia temporibus ipsum laborum rerum sed est molestiae quasi, esse adipisci?</p> -->
                     </div>
                     <div class='home-content-box'>
                         <div class='home-img-container'>
                             <image src='images/rhband.jpg'></image>
                             <h1 class='img-banner'>Events</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consd dignissimos harum, ullam in perspiciatis Accusantium facilis qui perferendis a!</p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consd dignissimos harum, ullam in perspiciatis Accusantium facilis qui perferendis a!</p> -->
                     </div>
                     <div class='home-content-box'>
                         <div class='home-img-container'>
                             <image src='images/2017-10-16 103644-u167432-fr.jpg'></image>
                             <h1 class='img-banner'>Great Food</h1>
                         </div>
-                        <p>Lorem ipsum dolor sierimos sunt, dolorum culpa aperiam excepturi ea blanditiis voluptate, molestiae iure recusandae id obcaecati.</p>
+                        <!-- <p>Lorem ipsum dolor sierimos sunt, dolorum culpa aperiam excepturi ea blanditiis voluptate, molestiae iure recusandae id obcaecati.</p> -->
                     </div>
-                    <!-- <p>A image/video capturing hidetide followed with a description.</p> -->
                 </div>
                 <div class='home-second-row'>
                     <div class='transparent-background'>
@@ -352,7 +357,7 @@
 </div>
 
     <div class='first-footer'>
-        <div class='first-footer-container'>
+        <div class='first-footer-container desktop'>
             <div class='footer1-img'>
                 <a  target='_blank' href='http://www.redheadyachtclub.com/rentals.html'><img class='footer-girl'src='images/rhVacationR1.png'></a>
             </div>
@@ -366,10 +371,28 @@
                 <a href='http://www.redheadyachtclub.com/' target='_blank'><img class='footer-girl'src='images/redheadyachtclub.png'></a>
             </div>
         </div>
+        <div class='first-footer-container first-footer-mobile mobile'>
+            <div class='first-footer-row1-mobile'>
+                <div class='footer1-img'>
+                    <a  target='_blank' href='http://www.redheadyachtclub.com/rentals.html'><img class='footer-girl'src='images/rhVacationR1.png'></a>
+                </div>
+                <div class='footer1-img'>
+                    <a target='_blank' href='https://www.performanceboatcenter.com/'><img id='pLogo-mobile'src='images/performanceboatcenter-logo.png'></a>
+                </div>
+            </div>
+            <div class='first-footer-row2-mobile'>
+                <div class='footer1-img'>
+                    <a target='_blank' href='http://redheadlakesidegrill.businesscatalyst.com/'><img id='rdLogo-mobile' src='images/redheadlogotrans.png'></a>
+                </div>
+                <div class='footer1-img'>
+                    <a href='http://www.redheadyachtclub.com/' target='_blank'><img class='footer-girl'src='images/redheadyachtclub.png'></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <div class='footer-container'>
+        <div class='footer-container desktop'>
             <div id='footer-links'>
                 <div id='footer-address'>
                     <h1>Location</h1>
@@ -414,6 +437,61 @@
                     <p>Fri-Sun: 11am-11pm</p>
                     <p>Phone: 573-693-1525</p>
                 </div>
+            </div>
+
+        </div>
+        <div class='footer-container mobile'>
+            <div id='footer-links'>
+                <div class='footer-row-1'>
+                    <div id='footer-address'>
+                        <h1>Location</h1>
+                        <p><span id='footer-twenty'>21</span> MileMarker</p>
+                        <p>1700 Yacht Club Drive</p>
+                        <p>Osage Beach, MO 65065</p>
+                    </div>
+
+                    <div id='footer-hours'>
+                        <h1>Hours</h1>
+                        <p>Mon-Thu: 11am-10pm</p>
+                        <p>Fri-Sun: 11am-11pm</p>
+                        <p>Phone: 573-693-1525</p>
+                    </div>
+                </div>
+                <div class='footer-row-2'>
+                    <div class='footer-otherlinks'>
+                        <div class='footer-sister-links'>
+                            <a href='http://www.redheadyachtclub.com/rentals.html' target='_blank'>Rentals</a>
+                        </div>
+                        <div class='footer-sister-links'>
+                            <a href='http://www.redheadyachtclub.com/' target='_blank'>Yacht Club</a>
+                        </div>
+                        <div class='footer-sister-links'>
+                            <a href='https://staffedup.com/redhead-lakeside-grill' target='_blank'>Careers</a>
+                        </div>
+                        <div class='footer-sister-links'>
+                            <a href='http://redheadlakesidegrill.businesscatalyst.com/' target='_blank'>Redhead Lakeside Grill</a>
+                        </div>
+                        <div class='footer-sister-links'>
+                            <a href='https://www.performanceboatcenter.com/' target='_blank'>Performance Boat Center</a>
+                        </div>
+                    </div>
+                    <!-- <div class='footer-lady'>
+                        <image src='images/girllg.png'/>
+                    </div> -->
+                    <div id='socials'>
+                        <div class='footer-links-social'>
+                            <a class="social-button facebook" href="https://www.facebook.com/RHGrillandYachtClub/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+                        </div>
+                        <div class='footer-links-social'>
+                            <a class="social-button twitter" href="https://twitter.com/RedheadGrill" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                        </div>
+                        <div class='footer-links-social'>
+                            <a class='social-button tripadvisor' href='https://www.tripadvisor.com/Restaurant_Review-g44751-d8490961-Reviews-Redhead_Lakeside_Grill-Osage_Beach_Lake_of_the_Ozarks_Missouri.html' target='_blank'><i class="fab fa-tripadvisor"></i>Tripadvisor</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
