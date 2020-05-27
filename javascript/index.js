@@ -85,7 +85,40 @@ $('.drink').on('click',function(){
 //------------------MOBILE DROPDOWN --------------
 
 $('.dropdown-icon').hover(function(){
-    $('.dropdown-content').slideDown(200);
-}, function(){
-    $('.dropdown-content',this).stop().slideUp(200);
+    $('.dropdown-content').slideToggle();
+
 })
+$('.dropdown-content li a').on('click',function(){
+    $('.dropdown-content li a').removeClass('selected');
+})
+$('#mobile-home').on('click',function(){
+    $('#mobile-home').addClass('selected')
+    $('.event-container').hide()
+    $('.menu-container').hide()
+    $('.contact-container').hide()
+    $('.home-container').show()
+})
+$('#mobile-events').on('click',function(){
+    $('#mobile-events').addClass('selected')
+    $('.home-container').hide()
+    $('.menu-container').hide()
+    $('.contact-container').hide()
+    $('.event-container').show()
+})
+$('#mobile-menu').on('click',function(){
+    $("#mobile-menu").addClass('selected')
+    $('.event-container').hide()
+    $('.home-container').hide()
+    $('.contact-container').hide()
+    $('.menu-container').show()
+})
+$('#mobile-contact').on("click",function(){
+    $('#mobile-contact').addClass('selected')
+    $('.event-container').hide()
+    $('.home-container').hide()
+    $('.menu-container').hide()
+    $('.contact-container').show()
+})
+$(document).click(function(){
+    $("#dropdown-content").hide();
+});
