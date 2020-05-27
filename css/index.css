@@ -1291,4 +1291,10 @@ textarea{
     .footer-sister-links a{
         font-size:14px;
     }
+    .footer-sister-links{
+        /* text-align: center; */
+    }
+    #socials{
+        padding-right:0px;
+    }
 }
