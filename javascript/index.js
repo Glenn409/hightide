@@ -85,7 +85,7 @@ $('.drink').on('click',function(){
 //------------------MOBILE DROPDOWN --------------
 
 $('.dropdown-icon').hover(function(){
-    $('.dropdown-content').slideToggle();
+    $('.dropdown-content').slideToggle(220);
 
 })
 $('.dropdown-content li a').on('click',function(){
