@@ -1092,6 +1092,12 @@ textarea{
     }
 }
 @media only screen and (max-width:767.98px){
+    .top-nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 60;
+    }
     .top-logo {
         padding-top:60px;
         padding-left:12px;
@@ -1111,6 +1117,7 @@ textarea{
         display:flex;
     }
     .top-left-button{
+        border:none;
         position: relative;
     }
     .top-button{

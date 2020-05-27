@@ -84,13 +84,23 @@ $('.drink').on('click',function(){
 
 //------------------MOBILE DROPDOWN --------------
 
+$(document).click(function(){
+    $(".dropdown-content").slideToggle(220);
+  });
+  $(".dropdown-content").click(function(e){
+    e.stopPropagation();
+  });
 
-$('.dropdown-icon').on('click',function(){
-    $('.dropdown-content').slideToggle(220);
+
+$('.dropdown-content li .main-link').on('click',function(){
+    $('#mobile-home').removeClass('selected');
+    $('#mobile-menu').removeClass('selected')
+    $('#mobile-event').removeClass('selected');
+    $('#mobile-contact').removeClass('selected')
 })
 
-$('.dropdown-content li a').on('click',function(){
-    $('.dropdown-content li a').removeClass('selected');
+$('.outside-link').on('click',function(){
+    $('.dropdown-content').toggle();
 })
 $('#mobile-home').on('click',function(){
     $('#mobile-home').addClass('selected')
@@ -98,6 +108,7 @@ $('#mobile-home').on('click',function(){
     $('.menu-container').hide()
     $('.contact-container').hide()
     $('.home-container').show()
+    $(".dropdown-content").slideToggle(220);
 })
 $('#mobile-events').on('click',function(){
     $('#mobile-events').addClass('selected')
@@ -105,6 +116,7 @@ $('#mobile-events').on('click',function(){
     $('.menu-container').hide()
     $('.contact-container').hide()
     $('.event-container').show()
+    $(".dropdown-content").slideToggle(220);
 })
 $('#mobile-menu').on('click',function(){
     $("#mobile-menu").addClass('selected')
@@ -112,6 +124,7 @@ $('#mobile-menu').on('click',function(){
     $('.home-container').hide()
     $('.contact-container').hide()
     $('.menu-container').show()
+    $(".dropdown-content").slideToggle(220);
 })
 $('#mobile-contact').on("click",function(){
     $('#mobile-contact').addClass('selected')
@@ -119,6 +132,7 @@ $('#mobile-contact').on("click",function(){
     $('.home-container').hide()
     $('.menu-container').hide()
     $('.contact-container').show()
+    $(".dropdown-content").slideToggle(220);
 })
 $(document).click(function(){
     $("#dropdown-content").hide();
