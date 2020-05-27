@@ -81,3 +81,11 @@ $('.drink').on('click',function(){
     $('.food').css('background-color','gray')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
 })
+
+//------------------MOBILE DROPDOWN --------------
+
+$('.dropdown-icon').hover(function(){
+    $('.dropdown-content').slideDown(200);
+}, function(){
+    $('.dropdown-content',this).stop().slideUp(200);
+})

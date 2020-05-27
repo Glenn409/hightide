@@ -944,6 +944,35 @@ textarea{
 .mobile{
     display:none;
 }
+.dropdown-icon {
+    color:white !important;
+    font-size:25px;
+}
+.dropdown-content{
+    display:none;
+    width:160px;
+    top:120%;
+    left:0%;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 55;
+    background-color:#1E1E1E;
+}
+.dropdown-content li a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom:1px solid gray;
+    padding:15px 0px 10px 0px;
+    margin-right:10px;
+    margin-left:10px;
+    margin-bottom:5px;
+}
+.dropdown-content li {
+    display: inline;
+}
 @media only screen and (max-width:1600px){
     .top-nav-container{
         width:100%;
@@ -1058,6 +1087,14 @@ textarea{
     }
 }
 @media only screen and (max-width:767.98px){
+    .top-logo {
+        padding-top:60px;
+        padding-left:12px;
+    }
+    .top-logo img{
+        width:90px;
+        height:90px;
+    }
     .banner{
         height:400px;
     }
@@ -1068,11 +1105,22 @@ textarea{
     .mobile {
         display:flex;
     }
+    .top-left-button{
+        position: relative;
+    }
     .top-button{
         display:flex;
         align-items: center;
         color:white;
         border:none;
+    }
+    #milemarker{
+        padding-left:15px;
+        border-left:1px solid gray;
+    }
+    .phone-number{
+        border-left:1px solid gray;
+        border-right:none;
     }
     .top-button i{
         cursor:pointer;
@@ -1080,6 +1128,9 @@ textarea{
         font-size:30px;
         margin-right:0px;
         padding-right:0px;
+    }
+    .top-left-button i:hover{
+        color:gray;
     }
     .home-first-row{
         flex-direction: column;
