@@ -1082,13 +1082,31 @@ textarea{
         width:90%
     }
     #circle-logo{
-        height:150px;
+        height:135px;
     }
     .banner{
         height:500px;
     }
     .second-row-left img{
 
+    }
+    .nav-button p{
+        font-size:35px;
+    }
+    .top-nav-container a,.top-left-button{
+        font-size:16px;
+    }
+    .top-logo{
+        padding-left:16px;
+    }
+    .top-logo img{
+        width:110px;
+        height:110px;
+    }
+}
+@media only screen and (max-width:870px){
+    .phone-number{
+        display:none;
     }
 }
 @media only screen and (max-width:767.98px){
@@ -1266,5 +1284,11 @@ textarea{
 @media only screen and (max-width:600px){
     .phone-number {
         display:none;
+    }
+    #footer-hours p,#footer-address p{
+        font-size:14px;
+    }
+    .footer-sister-links a{
+        font-size:14px;
     }
 }
