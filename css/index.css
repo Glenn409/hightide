@@ -607,6 +607,7 @@ height:150px;
 }
 .menu-content{
     margin-bottom:20px;
+    overflow: hidden;
 }
 .food-content{
     width:90%;
@@ -654,6 +655,7 @@ height:150px;
     font-family: 'minya_nouvelleregular',sans-serif;
     width: 100%;
     display:flex;
+    
     align-items: center;
     justify-content: center;
     font-size:40px;
@@ -1037,6 +1039,8 @@ textarea{
     }
     .coming-soon-text{
         font-size:60px;
+        text-align: center;
+
     }
     .home-img-container{
         width:90%;
@@ -1070,6 +1074,12 @@ textarea{
     .redhead-content-container{
         width:250px;
     }
+    .redheads-header{
+        justify-content: space-around;
+    }
+    .redheads-header img{
+        padding-right:0px;
+    }
 }
 @media only screen and (max-width:1000px){
     .footer1-img a img{
@@ -1087,8 +1097,12 @@ textarea{
     .banner{
         height:500px;
     }
-    .second-row-left img{
-
+    .redheads-row{
+        background-size: 150%;
+        background-repeat: no-repeat;
+    }
+    .redheads-header img{
+        padding-bottom:20px;
     }
     .nav-button p{
         font-size:35px;
@@ -1112,14 +1126,63 @@ textarea{
         width:110px;
         height:110px;
     }
+    .redheads-header{
+        flex-direction: column;
+    }
 }
 @media only screen and (max-width:870px){
+    .contact-header img{
+        padding-right:0px;
+    }
+    .contact-header {
+        font-size:45px;
+    }
+    .redheads-row{
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+    .redheads-left{
+        padding-bottom:40px;
+        width:100%;
+        border-bottom:1px solid white;
+    }
+    .redheads-right{
+        padding-top:40px;
+        padding-bottom:40px;
+        width:90%;
+    }
+    #redheads-redirect-button{
+        width:200px;
+    }
+    .redheads-content{
+        display:none;
+    }
     .phone-number{
         display:none;
     }
+    .redheads-info{
+        flex-direction: column;
+    }
+    .menu-display-container{
+        height:400px;
+        overflow: hidden;
+    }
 }
 @media only screen and (max-width:767.98px){
-    
+    button{
+        width:175px;
+    }
+    .coming-soon-text{
+        padding:10px 10px 10px 10px;
+        font-size:35px;
+    }
+    .redheads-row{
+        background-size:400%;
+        background-position: 50% 50%;
+    }
+    .redheads-header h1{
+        font-size:30px;
+    }
     .phone-number{
         display:flex;
         border-right:1px solid gray !important;
@@ -1219,22 +1282,7 @@ textarea{
     #rdLogo{
         width:300px;
     }
-    .first-footer-row1-mobile{
-        padding-top:40px;
-        padding-bottom:20px;
-        width:100%;
-        display:flex;
-        align-items: flex-end;
-        justify-content: space-around;
-    }
-    .first-footer-row2-mobile{
-        padding-top:20px;
-        padding-bottom:40px;
-        width:100%;
-        display:flex;
-        align-items: flex-end;
-        justify-content: space-around;
-    }
+
     .footer-girl{
         height:150px;
         width:auto;
@@ -1334,5 +1382,22 @@ textarea{
 @media only screen and (max-width:500px){
     .phone-number{
         display:none;
+    }
+}
+@media only screen and (max-width:450px){
+    .contact-header img{
+        width:80px;
+
+    }
+    .contact-header{
+        font-size:35px;
+    }
+}
+@media only screen and (max-width:400px){
+    .redheads-header img{
+        width:80%;
+    }
+    .redheads-row{
+        background-size:700%;
     }
 }
