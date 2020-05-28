@@ -978,7 +978,7 @@ textarea{
     font-size:25px;
 }
 .dropdown-content{
-    font-family:'minya_nouvelleregular',sans-serif;
+    font-family: sans-serif ;
     display:none;
     width:160px;
     top:120%;
@@ -1222,7 +1222,8 @@ textarea{
         border-right:1px solid gray !important;
     }
     #milemarker-div{
-        border-right:1px solid gray;
+        padding-left:0px;
+        /* border-right:1px solid gray; */
     }
     .top-nav{
         position: fixed;
