@@ -1,13 +1,5 @@
 $(document).ready(function(){
-    // $('.event-container').show()
-    // var isHidden = $('.dropdown-content').is(':hidden')
-    // if(isHidden){
-    //     $('.dropdown-icon').on('click',function(){
-    //         $(".dropdown-content").slideToggle(220);
-    //     })
-    //     isHidden = false;
-    // } 
-    // $(".slide-window > div:gt(0)").hide();
+    //----firstfooter img slider
     setInterval(function() { 
         $('.slide-window').animate({
             right:'+=100%',
@@ -16,33 +8,37 @@ $(document).ready(function(){
         });
       },  5000);
 
+
+    //makes sure all content is hidden until clicked
     $('.drink-content').hide()
     $('.event-container').hide()
     $('.menu-container').hide()
     $('.contact-container').hide()
     $('.banner2').hide()
     $('.banner3').hide()
-    let num = 1;
-    setInterval(function(){
-        switch(num){
-            case 1:
-                $('.banner1').hide()
-                $('.banner2').fadeIn(500) 
-                num++
-                break;
-            case 2:
-                $('.banner2').hide()
-                $('.banner3').fadeIn(500)
-                num++
-                break;
-            case 3:
-                $('.banner3').hide()
-                $('.banner1').fadeIn(500)
-                num = 1
-                break;
-        }            
+
+    //---a interval for rotating banners at the top of page
+    // let num = 1;
+    // setInterval(function(){
+    //     switch(num){
+    //         case 1:
+    //             $('.banner1').hide()
+    //             $('.banner2').fadeIn(500) 
+    //             num++
+    //             break;
+    //         case 2:
+    //             $('.banner2').hide()
+    //             $('.banner3').fadeIn(500)
+    //             num++
+    //             break;
+    //         case 3:
+    //             $('.banner3').hide()
+    //             $('.banner1').fadeIn(500)
+    //             num = 1
+    //             break;
+    //     }            
         
-    },4000)
+    // },4000)
 })
 
 //------------NavBar jquery------------
