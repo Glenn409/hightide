@@ -7,6 +7,15 @@ $(document).ready(function(){
     //     })
     //     isHidden = false;
     // } 
+    // $(".slide-window > div:gt(0)").hide();
+    setInterval(function() { 
+        $('.slide-window').animate({
+            right:'+=100%',
+        }, 1500, function () {
+            $('.slide-window').append($('.slide-window>div:first')).css({ right: 0 });
+        });
+      },  5000);
+
     $('.drink-content').hide()
     $('.event-container').hide()
     $('.menu-container').hide()
