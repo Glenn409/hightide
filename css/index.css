@@ -1211,6 +1211,11 @@ textarea{
         justify-content: center;
 
     }
+    .footer1-img a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     #rdLogo{
         width:300px;
     }
@@ -1233,10 +1238,6 @@ textarea{
     .footer-girl{
         height:150px;
         width:auto;
-    }
-    .footer1-img{
-        display:flex;
-        align-items: center;
     }
     .nav-button{
         display:none;
