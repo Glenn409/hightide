@@ -978,6 +978,7 @@ textarea{
     font-size:25px;
 }
 .dropdown-content{
+    font-family:'minya_nouvelleregular',sans-serif;
     display:none;
     width:160px;
     top:120%;
@@ -999,7 +1000,7 @@ textarea{
     margin-right:10px;
     margin-left:10px;
     margin-bottom:5px;
-    font: size 18px;
+    font: size 22px;
 }
 .dropdown-content li {
     display: inline;
