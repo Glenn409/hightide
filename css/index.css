@@ -31,6 +31,7 @@ body {
     background-size: 100%;
     background-position: 50% 30%;
 }
+
 .size-div{
     margin-right:auto;
     margin-left:auto;
@@ -129,11 +130,38 @@ body {
 }
 .event-container{
     /* display:none; */
+    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     margin-left:auto;
     margin-right:auto;
 }
-
+.test-background{
+    position: absolute;
+    top: 0%;
+    left:-1%;
+    width:102%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(4px);
+    background-color:rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    height: 101%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.event-container h1{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top:30%;
+    font-size:60px;
+    font-family:'minya_nouvelleregular',sans-serif ;    
+    z-index:6;
+    color:white;
+}
 .first-footer{
     border-top:3px solid red;
     border-bottom:3px solid #b6ffff;
@@ -1169,6 +1197,9 @@ textarea{
     }
 }
 @media only screen and (max-width:767.98px){
+    .event-container h1{
+        font-size:40px;
+    }
     button{
         width:175px;
     }
