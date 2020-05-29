@@ -177,3 +177,64 @@ $('#mobile-contact').on("click",function(){
 $(document).click(function(){
     $("#dropdown-content").hide();
 });
+
+
+//----CONTACT US VALIDATORS ----- 
+$('#contact-submit').on('click',function(e){
+    e.preventDefault()
+    console.log('----pressed----')
+    let name = $('#name').val()
+    let email = $('#email').val()
+    let msg = $("#message").val()
+    
+    if(name.trim() === ''){
+        $('#name').css('border','2px solid red')
+        $('#name').css('background','#FFCCCC')
+        $('#name-error').text('This Field is Required')
+    } else {
+        $('#name').css('border','')
+        $('#name').css('background','white')
+        $('#name-error').text('')
+    }
+
+    if(email.trim() === ''){
+        $('#email').css('border','2px solid red')
+        $('#email').css('background','#FFCCCC')
+        $('#email-error').text('This Field is Required')
+    } else {
+        $('#email').css('border','')
+        $('#email').css('background','white')
+        $('#email-error').text('')
+    }
+
+    if(msg.trim() === ''){
+        $('#message').css('border','2px solid red')
+        $('#message').css('background','#FFCCCC')
+        $('#msg-error').text('This Field is Required')
+    } else {
+        $('#message').css('border','')
+        $('#message').css('background','white')
+        $('#msg-error').text('')
+    }
+
+    if(name.trim() !== '' || email.trim() !== '' || msg.trim() !== '' ){
+        $.post('/redheads/api/contact',
+        {
+            name: name,
+            email: email,
+            msg: msg
+        },function(data){
+            if(data.status === true){
+                $("#email-status").text("Email Sent!")
+                $('#email-status').css('color','#4BB543')
+                $('#contact-submit').attr("disabled", true)
+            } else {
+                $('#email-status').text('Something went wrong!')
+                $('#email-status').css('color','red')
+                $('#contact-submit').attr("disabled", true)
+            }
+        })
+        
+    }
+
+})

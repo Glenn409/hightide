@@ -67,7 +67,12 @@ body {
     height:40px;
     
 }
-
+#email-status{
+    font-size:25px;
+    width:100%;
+    text-align:center;
+    padding-bottom:20px;
+}
 .nav-button p{
     background: -webkit-linear-gradient(#eee, red);
     -webkit-background-clip: text;
@@ -968,6 +973,7 @@ button{
 button:hover{
     background:rgb(0, 108, 145);
 }
+#contact-submit{margin-bottom:20px;}
 textarea{
     height:180px;
     resize:none;
@@ -1009,6 +1015,16 @@ textarea{
 }
 .selected{
     border-bottom:1px solid red !important;
+}
+input{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.error {
+    padding-top:5px;
+    font-size:16px;
+    font-family:sans-serif;
+    color:red;
+    
 }
 @media only screen and (max-width:1600px){
     .top-nav-container{
