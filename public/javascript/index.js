@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
     //makes sure all content is hidden until clicked
-    $('.drink-content').hide()
+    $('.drink-menu').hide()
     $('.event-container').hide()
     $('.menu-container').hide()
     $('.contact-container').hide()
@@ -81,19 +81,26 @@ $('#nav-contact').on('click',function(){
 
 // -----------------Menu jquery -------------
 $('.food').on('click',function(){
-    $('#drinkheader').css('border-bottom','4px solid #1e1e1e')
-    $('.drink-content').hide()
-    $('.food-content').show()
+    $('#drinkheader').css('border-bottom','4px solid rgb(44, 44, 44) ')
+    $('.food').css('background-color','#1e1e1e')
+    $('.drink').css('background-color', 'rgb(44, 44, 44)')
+    $('.drink-menu').hide()
+    $('.food-menu').show()
     $('#foodheader').css('border-bottom','4px solid #ff3030')
 })
 $('.drink').on('click',function(){
-    $('.food-content').hide()
-    $('.drink-content').show()
-    $('#foodheader').css('border-bottom','4px solid #1e1e1e')
-    $('.food').css('background-color','gray')
+    $('.food-menu').hide()
+    $('.drink-menu').show()
+    $('.drink').css("background-color", '#1e1e1e')
+    $('.food').css('background-color', 'rgb(44, 44, 44)')
+    $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
 })
-
+// $('#foodheader').hover(function(){
+//     $(this).css("border-bottom",'4px solid #ff3030').fadeIn(500)
+// }, function(){
+//     $(this).css('border-bottom', '4px solid #1e1e1e')
+// })
 //------------------MOBILE DROPDOWN --------------
 
 // $(document).click(function(e){

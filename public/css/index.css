@@ -65,7 +65,6 @@ body {
     margin-right:5px;
     margin-left:5px;
     height:40px;
-    
 }
 #email-status{
     font-size:25px;
@@ -256,33 +255,31 @@ footer {
     margin-right:auto;
     display:flex;
     justify-content: space-around;
-    margin-bottom:30px;
+    height:100%;
     width:100%;
 }
 
 .menu-header{
-    position: relative;
-    /* width:100%; */
+    width:100%;
+    text-align:center;
     display:flex;
     font-family: 'minya_nouvelleregular',sans-serif;
     align-items: center;
     justify-content:center;
     font-size:50px;
     font-weight: 300;
-    background: -webkit-linear-gradient(#eee, red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* margin-bottom:20px; */
 }
 
 
 .menu-container{
 
 }
+
 .menu-display-container{
-    background:#1e1e1e;
-    padding-bottom:20px;
+    background:white;
     position: relative;
+    border:2px solid #1e1e1e;
+    margin-bottom:20px;
 }
 .coming-soon-blur{
     -webkit-filter: blur(3px);
@@ -625,24 +622,143 @@ i {
 height:150px;
 }
 .food,.drink{
+    display:flex;
+    align-items: center;
     cursor:pointer;
+    position:relative;
+    justify-content: center;
+}
+.food{
+    border-right:1px solid red;
+}
+.drink{
+    background-color:rgb(44, 44, 44);
 }
 
 #foodheader,#drinkheader{
-    padding-bottom:5px;
+    padding-bottom:8px;
     margin-top:20px;
     margin-bottom:20px;
+    position:relative;
+    background: -webkit-linear-gradient(#eee, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #foodheader{
     border-bottom:4px solid #ff3030;
+    padding-bottom:8px;
 }
 #drinkheader{
-    border-bottom:4px solid #1E1E1E;
+    border-bottom:4px solid rgb(44, 44, 44);
+    padding-bottom:8px;
 }
-.menu-content{
-    margin-bottom:20px;
-    overflow: hidden;
+
+#drinkheader:after, #foodheader:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    top:100%;
+    left:0;
+    background: #ff3030;
+    transition: transform .2s;
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+#drinkheader:hover:after, #foodheader:hover:after {
+     transform: scaleX(1); 
 }
+.menu-header:hover{
+    background:#1e1e1e;
+}
+.menu-content-container{
+    width:100%;
+    position: relative;
+    background-color:#ffffff;
+
+
+    /* background-image: url('/images/girllg.png'); */
+}
+.menu-content-container img{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height:500px;
+    width:auto;
+    opacity: 0.2;
+}
+.menu-sub-header-drinks{
+    display:flex;
+    background-color:#1E1E1E;
+    color:white;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size:22px;
+    height:80px;
+    padding-left:10px;
+    padding-right:10px;
+    border-top:1px solid gray;
+    font-family: 'minya_nouvelleregular',sans-serif;
+}
+.sub-header-button{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.drink-menu{
+    text-align:center;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+.drink-menu h1{
+    font-family: 'minya_nouvelleregular',sans-serif;
+    font-weight:bold;
+    font-size:30px;
+    margin-top:15px;
+    margin-bottom:15px;
+    color:red;
+}
+.drink-section{
+    font-weight:bold;   
+    display:flex;
+}
+h1.drink-section-title{
+    margin-top:25px;
+    margin-bottom:25px;
+    font-size:50px;
+}
+.menu-item{
+    width:80%;
+    font-family: 'minya_nouvelleregular',sans-serif;
+    margin-right:15px;
+    margin-left:15px;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+.menu-item h1{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:22px;
+    width:80%;
+    margin-bottom:5px;
+    font-weight:bold;   
+    color:black;
+    padding-bottom:5px;
+    border-bottom:1px solid black;
+}
+.menu-item p{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:rgb(80,80,80);
+    width:60%;
+    font-size:18px;
+}
+
 .food-content{
     width:90%;
     display:flex;
@@ -1026,6 +1142,9 @@ input{
     color:red;
     
 }
+.menu-display-header{
+    color:white;
+}
 @media only screen and (max-width:1600px){
     .top-nav-container{
         width:100%;
@@ -1211,8 +1330,8 @@ input{
     }
     .menu-display-container{
         height:400px;
-        overflow: hidden;
-    }
+        width:100%;
+   }
 }
 @media only screen and (max-width:767.98px){
     .home-second-row{
