@@ -687,7 +687,7 @@ height:150px;
     width:auto;
     opacity: 0.2;
 }
-.menu-sub-header-drinks{
+.menu-sub-header-drinks,.menu-sub-header-food{
     display:flex;
     background-color:#1E1E1E;
     color:white;
@@ -700,6 +700,9 @@ height:150px;
     padding-right:10px;
     border-top:1px solid gray;
     font-family: 'minya_nouvelleregular',sans-serif;
+}
+.menu-sub-header-drinks{
+    /* display:none; */
 }
 .sub-header-button{
     width:100%;

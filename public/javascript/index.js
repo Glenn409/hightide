@@ -16,6 +16,7 @@ $(document).ready(function(){
     $('.contact-container').hide()
     $('.banner2').hide()
     $('.banner3').hide()
+    $('.menu-sub-header-drinks').hide()
 
     //---a interval for rotating banners at the top of page
     // let num = 1;
@@ -86,11 +87,15 @@ $('.food').on('click',function(){
     $('.drink').css('background-color', 'rgb(44, 44, 44)')
     $('.drink-menu').hide()
     $('.food-menu').show()
+    $('.menu-sub-header-food').show();
+    $('.menu-sub-header-drinks').hide()
     $('#foodheader').css('border-bottom','4px solid #ff3030')
 })
 $('.drink').on('click',function(){
     $('.food-menu').hide()
     $('.drink-menu').show()
+    $('.menu-sub-header-drinks').show()
+    $('.menu-sub-header-food').hide()
     $('.drink').css("background-color", '#1e1e1e')
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
