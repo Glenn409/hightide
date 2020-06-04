@@ -250,3 +250,55 @@ $('#contact-submit').on('click',function(e){
     }
 
 })
+
+// -------MENU JQUERY --------
+$('.sub-header-button').on('click',function(){
+    $('.menu-section-container').hide()
+    let a = $(this)
+    $('.sub-header-button').css('color','white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+    $(this).css("color",'black')
+    $(this).css("background-color",'white')
+})
+$(".sub-header-button").on('mouseover', function () {
+    $(this).addClass('menu-cursor-hover')
+    // $(this).css("color",'black')
+ }).on('mouseout', function () {
+    $(this).removeClass('menu-cursor-hover')
+ });
+
+
+
+$('.classics-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.classics').show();
+})
+$('.hand-crafted-seltzers-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.hand-crafted-seltzers').show()
+})
+
+$('.margaritas-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.margaritas').show()
+})
+
+$('.mules-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.mules').show()
+})
+
+$('.mojitos-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.mojitos').show()
+})
+
+$('.frozen-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.frozen').show()
+})
+
+$('.beer-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.beer').show()
+})
