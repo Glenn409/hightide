@@ -17,7 +17,10 @@ $(document).ready(function(){
     $('.banner2').hide()
     $('.banner3').hide()
     $('.menu-sub-header-drinks').hide()
-
+    $('.menu-section-container').hide()
+    $('.classics').show();
+    $('.classics-button').css('color','white')
+    $('.classics-button').css("background-color",'#1e1e1e')
     //---a interval for rotating banners at the top of page
     // let num = 1;
     // setInterval(function(){
@@ -96,6 +99,9 @@ $('.drink').on('click',function(){
     $('.drink-menu').show()
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
+    $('.classics').show();
+    // $('.classics-button').css('color','white')
+    // $('.classics-button').css("background-color",'#1e1e1e')
     $('.drink').css("background-color", '#1e1e1e')
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
