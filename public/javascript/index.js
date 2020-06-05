@@ -176,9 +176,6 @@ $('#mobile-menu').on('click',function(){
     $('.home-container').hide()
     $('.contact-container').hide()
     $('.menu-container').show()
-    if ($(window).width() < 500) {
-        $(".hide-menu-word-drink").show()
-    }
     $('html, body').animate({
         scrollTop: $("#circle-logo").offset().top
       }, 200)
