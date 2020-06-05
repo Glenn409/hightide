@@ -1518,9 +1518,16 @@ input{
     .redheads-header h1{
         font-size:30px;
     }
+    .redheads-info p {
+        font-size:22px;
+    }
     .phone-number{
         display:flex;
         border-right:1px solid gray !important;
+    }
+    .redheads-right,.redheads-left{
+        padding-left:20px;
+        padding-right:20px;
     }
     #milemarker-div{
         padding-left:0px;
@@ -1786,7 +1793,6 @@ input{
 @media only screen and (max-width:450px){
     .contact-header img{
         width:80px;
-
     }
     .contact-header{
         font-size:35px;
@@ -1804,5 +1810,8 @@ input{
     }
     .home-second-row{
         background-size:500%;
+    }
+    .redheads-right p ,.redheads-left p{
+        font-size:18px;
     }
 }
