@@ -975,14 +975,16 @@ h1.drink-section-title{
     background-position: 100% 70%;
 }
 #redheads-redirect-button{
-    margin-top:10px;
-    margin-bottom:10px;
+    border-radius:10px;
+    margin-top:20px;
     background-color:red;
-    border-radius: 0px;
     color:white;
     font-family: sans-serif;
+    width:200px;
+    padding:5px;
 }
 #redheads-redirect-button a{
+    width:100%;
     text-decoration: none;
     color:white;
 }
@@ -1417,6 +1419,7 @@ input{
     }
     #redheads-redirect-button{
         width:200px;
+        margin-bottom:0px;
     }
     .redheads-content{
         display:none;
@@ -1528,6 +1531,9 @@ input{
     .redheads-right,.redheads-left{
         padding-left:20px;
         padding-right:20px;
+    }
+    .redheads-right{
+        padding-bottom:0px;
     }
     #milemarker-div{
         padding-left:0px;
@@ -1768,6 +1774,9 @@ input{
     .phone-number{
         display:none;
     }
+    .menu-content-container img{
+        left:-5%;
+    }
     .grand-opening-container{
         font-size:30px;
     }
@@ -1794,16 +1803,24 @@ input{
     .contact-header img{
         width:80px;
     }
+    .menu-content-container img{
+        left:-18%;
+    }
     .contact-header{
         font-size:35px;
     }
     .redheads-header h1{
-        font-size:22px;
+        font-size:26px;
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 @media only screen and (max-width:400px){
     .redheads-header img{
         width:80%;
+    }
+    .menu-content-container img{
+        left:-40%;
     }
     .redheads-row{
         background-size:700%;
