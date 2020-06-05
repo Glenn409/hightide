@@ -176,6 +176,7 @@ $('#mobile-menu').on('click',function(){
     $('.home-container').hide()
     $('.contact-container').hide()
     $('.menu-container').show()
+    $('#drinkheader').css('border-bottom','4px solid rgb(44, 44, 44) ')
     $('html, body').animate({
         scrollTop: $("#circle-logo").offset().top
       }, 200)
