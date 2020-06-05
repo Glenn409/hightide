@@ -100,8 +100,7 @@ $('.drink').on('click',function(){
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
     $('.classics').show();
-    // $('.classics-button').css('color','white')
-    // $('.classics-button').css("background-color",'#1e1e1e')
+    $('.classics-button').addClass('menu-cursor-hover')
     $('.drink').css("background-color", '#1e1e1e')
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
@@ -257,10 +256,10 @@ $('#contact-submit').on('click',function(e){
 
 })
 
-// -------MENU JQUERY --------
+// -------MENU JQUERY FOR DESKTOP --------
 $('.sub-header-button').on('click',function(){
     $('.menu-section-container').hide()
-    let a = $(this)
+    $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.sub-header-button').css('color','white')
     $('.sub-header-button').css("background-color",'#1e1e1e')
     $(this).css("color",'black')
@@ -268,7 +267,6 @@ $('.sub-header-button').on('click',function(){
 })
 $(".sub-header-button").on('mouseover', function () {
     $(this).addClass('menu-cursor-hover')
-    // $(this).css("color",'black')
  }).on('mouseout', function () {
     $(this).removeClass('menu-cursor-hover')
  });
@@ -307,4 +305,28 @@ $('.frozen-button').on('click',function(){
 $('.beer-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.beer').show()
+})
+
+// ---- MENU JQUERY FOR MOBILE ------
+$('.classics-mobile-button').on('click',function(){
+    $('.classics-mobile').slideToggle(300, 'linear')
+})
+
+$('.hand-crafted-seltzers-mobile-button').on('click',function(){
+    $('.hand-crafted-seltzers-mobile').slideToggle(300, 'linear')
+})
+$('.margaritas-mobile-button').on('click',function(){
+    $('.margaritas-mobile').slideToggle(300, 'linear')
+})
+$('.mules-mobile-button').on('click',function(){
+    $('.mules-mobile').slideToggle(300, 'linear')
+})
+$('.mojitos-mobile-button').on('click',function(){
+    $('.mojitos-mobile').slideToggle(300, 'linear')
+})
+$('.frozen-mobile-button').on('click',function(){
+    $('.frozen-mobile').slideToggle(300, 'linear')
+})
+$('.beer-mobile-button').on('click',function(){
+    $('.beer-mobile').slideToggle(300, 'linear')
 })
