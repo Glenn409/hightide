@@ -105,10 +105,10 @@ $('.drink').on('click',function(){
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
     $('.sub-header-button').removeClass('menu-cursor-hover')
-    $('.classics').show();
-    $('.classics-button').addClass('menu-cursor-hover')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
+    $('.classics').show();
+    $('.classics-button').addClass('menu-cursor-hover')
 })
 // $('#foodheader').hover(function(){
 //     $(this).css("border-bottom",'4px solid #ff3030').fadeIn(500)
