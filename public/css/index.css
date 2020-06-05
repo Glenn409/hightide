@@ -1793,7 +1793,7 @@ input{
         display:none;
     }
     .hide-menu-word-drink{
-        display:block;
+        display:display;
     }
     .menu-item h1{
         width:90%;
