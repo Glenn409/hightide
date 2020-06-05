@@ -73,6 +73,11 @@ $('#nav-menu').on('click',function(){
     $('.home-container').hide()
     $('.contact-container').hide()
     $('.menu-container').show()
+    if($(window).width() < 500){
+        $('#drinkheader').text('Drinks')
+    } else {
+        $('#drinkheader').text('Drink Menu')
+    }
     $('#nav-menu').css('border-bottom','4px solid #ff3030')
 })
 $('#nav-contact').on('click',function(){
@@ -176,6 +181,9 @@ $('#mobile-menu').on('click',function(){
     $('.home-container').hide()
     $('.contact-container').hide()
     $('.menu-container').show()
+    if($(window).width() < 500){
+        $('#drinkheader').text('Drinks')
+    }
     $('html, body').animate({
         scrollTop: $("#circle-logo").offset().top
       }, 200)
