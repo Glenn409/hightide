@@ -10,7 +10,10 @@ body {
     text-decoration: inherit;
 }
 
-.mobile-menu, .hide-menu-word-drink{
+.mobile-menu{
+    display:none;
+}
+.hide-menu-word-drink{
     display:none;
 }
 .banner1{
@@ -1392,6 +1395,7 @@ input{
         margin-top:15px;
         margin-bottom:15px;
     }
+
     #menu-header-container{
         height:100px;
     }
@@ -1789,12 +1793,13 @@ input{
     #drinkheader,#foodheader{
         font-size:30px;
     }
+        
     .hide-menu-word{
         display:none;
     }
     .hide-menu-word-drink{
+        color:inherit;
         display:block;
-        border:2px solid yellow;
     }
     .menu-item h1{
         width:90%;
