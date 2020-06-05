@@ -49,8 +49,7 @@ body {
     margin-right:auto;
 }
 .nav-bar{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     font-weight: 300;
     margin-bottom:100px;
     height:120px;
@@ -120,6 +119,8 @@ body {
 
 }
 #circle-logo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+
     display:block;
     z-index: 1;
     max-height:250px;
@@ -635,7 +636,7 @@ height:150px;
     justify-content: center;
 }
 .food{
-    border-right:1px solid red;
+    border-right:3px solid #ff3030;
 }
 .drink{
     background-color:rgb(44, 44, 44);
@@ -1222,7 +1223,9 @@ input{
 .mobile-menu{
     margin-top:10px;
 }
-
+.menu-display-container, .menu-header{
+    border-radius: 10px;
+}
 @media only screen and (max-width:1600px){
     .top-nav-container{
         width:100%;
