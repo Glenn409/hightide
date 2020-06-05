@@ -324,24 +324,24 @@ $('.beer-button').on('click',function(){
 
 // ---- MENU JQUERY FOR MOBILE ------
 $('.classics-mobile-button').on('click',function(){
-    $('.classics-mobile').slideToggle(700, 'linear')
+    $('.classics-mobile').slideToggle(400, 'linear')
 })
 
 $('.hand-crafted-seltzers-mobile-button').on('click',function(){
-    $('.hand-crafted-seltzers-mobile').slideToggle(500, 'linear')
+    $('.hand-crafted-seltzers-mobile').slideToggle(400, 'linear')
 })
 $('.margaritas-mobile-button').on('click',function(){
-    $('.margaritas-mobile').slideToggle(500, 'linear')
+    $('.margaritas-mobile').slideToggle(400, 'linear')
 })
 $('.mules-mobile-button').on('click',function(){
-    $('.mules-mobile').slideToggle(500, 'linear')
+    $('.mules-mobile').slideToggle(400, 'linear')
 })
 $('.mojitos-mobile-button').on('click',function(){
-    $('.mojitos-mobile').slideToggle(500, 'linear')
+    $('.mojitos-mobile').slideToggle(400, 'linear')
 })
 $('.frozen-mobile-button').on('click',function(){
-    $('.frozen-mobile').slideToggle(500, 'linear')
+    $('.frozen-mobile').slideToggle(400, 'linear')
 })
 $('.beer-mobile-button').on('click',function(){
-    $('.beer-mobile').slideToggle(500, 'linear')
+    $('.beer-mobile').slideToggle(400, 'linear')
 })
