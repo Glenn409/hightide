@@ -512,9 +512,8 @@ footer {
 .second-row-right h1{
     font-family:'minya_nouvelleregular',sans-serif;
     text-align: center;
-    margin-bottom:10px;
     font-size:28px;
-    padding-bottom:30px;
+    padding-bottom:20px;
     border-bottom:1px solid white;
 }
 .second-row-right p{
@@ -1509,6 +1508,7 @@ input{
         font-size:24px;
     }
     .home-second-row{
+        height:600px;
         background-size:200%;
     }
     .event-container h1{
@@ -1666,9 +1666,6 @@ input{
     .second-row-left img{
         width:90%;
     }
-    .home-second-row {
-        height:700px;
-    }
     .transparent-background{
         display:flex;
         align-items: center;
@@ -1730,6 +1727,21 @@ input{
 
     footer {
         height:100%;
+    }
+    .second-row-right{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .second-row-right h1{
+        font-size:22px;
+        padding-bottom:10px;
+    }
+    .second-row-box p{
+        font-size:15px;
+    }
+    .second-row-box2 p{
+        font-size:15px;
+
     }
 }
 
