@@ -1790,7 +1790,7 @@ input{
         font-size:30px;
     }
     .hide-menu-word-drink{
-        display:inline-block;
+        display:block;
     }
     .hide-menu-word{
         display:none;
