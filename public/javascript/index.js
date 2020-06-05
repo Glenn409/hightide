@@ -263,13 +263,19 @@ $('.sub-header-button').on('click',function(){
     $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.sub-header-button').css('color','white')
     $('.sub-header-button').css("background-color",'#1e1e1e')
-    $(this).css("color",'black')
-    $(this).css("background-color",'white')
+    if($(this).hasClass('mobile') === false){
+        $(this).css("color",'black')
+        $(this).css("background-color",'white')
+    }
 })
 $(".sub-header-button").on('mouseover', function () {
-    $(this).addClass('menu-cursor-hover')
+    if($(this).hasClass('mobile') === false){
+        $(this).addClass('menu-cursor-hover')
+    }
  }).on('mouseout', function () {
-    $(this).removeClass('menu-cursor-hover')
+     if($(this).hasClass('mobile') === false){
+         $(this).removeClass('menu-cursor-hover')
+     }
  });
 
 

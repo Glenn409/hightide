@@ -9,7 +9,8 @@ body {
     color: inherit;
     text-decoration: inherit;
 }
-.mobile-menu{
+
+.mobile-menu, .hide-menu-word-drink{
     display:none;
 }
 .banner1{
@@ -277,7 +278,7 @@ footer {
 
 
 .menu-container{
-
+    border-top-left-radius: 10px;
 }
 
 .menu-display-container{
@@ -707,8 +708,10 @@ height:150px;
     border-top:1px solid gray;
     font-family: 'minya_nouvelleregular',sans-serif;
 }
-.menu-sub-header-drinks{
-    /* display:none; */
+.coming-soon-food{
+    width:100%;
+    font-size:40px;
+    text-align: center;
 }
 .sub-header-button{
     padding-left: 5px;
@@ -1381,6 +1384,8 @@ input{
 @media only screen and (max-width:900px){
     #drinkheader, #foodheader{
         font-size:40px;
+        margin-top:15px;
+        margin-bottom:15px;
     }
     #menu-header-container{
         height:100px;
@@ -1432,21 +1437,64 @@ input{
     }
 }
 @media only screen and (max-width:767.98px){
+    #drinkheader,#foodheader{
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size:35px;
+    }
+    .menu-content-container img{
+        left:2%;
+    }
+    
+    .menu-item h1{
+        width:90%;
+    }
+    .menu-content-container h1{
+        font-size:22px;
+    }
+    h1.drink-section-title{
+        padding-right:15px;
+        padding-left:15px;
+        margin-top:20px;
+        font-size:35px;
+        border-bottom:none;
+    }
+    .menu-content-container p{
+        font-size:16px;
+    }
     .drink-section-title{
         color:red;
+    }
+    .beer-list h1{
+        font-size:35px;
+        margin-top:20px;
+        padding-bottom:10px;
+    }
+    .beer-list p{
+        font-size:18px;
+    }
+    .coming-soon-food{
+        font-size:30px;
+        padding-top:10px;
+        padding-bottom:10px;
     }
     .menu-sub-header-drinks,.menu-sub-header-food{
         flex-direction:column;
         height:inherit;
         margin-top:0px;
+        padding-bottom:10px;
     }
     .menu-content-container{
         display:none;
     }
     .sub-header-button{
-        height:40px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6), 0 4px 15px 0 rgba(0, 0, 0, .6);
+        height:50px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius:10px;
+    }
+    .sub-header-button h1{
+        font-size:24px;
     }
     .home-second-row{
         background-size:200%;
@@ -1679,6 +1727,30 @@ input{
         padding-right:0px;
         justify-content: space-between;
     }
+    .drink-section, .drink-col-mid{
+        flex-direction: column;
+    }
+    .menu-item h1{
+        width:70%;
+    }
+    .drink-col-right {
+        margin-top:0px;
+    }
+    .drink-col-left{
+        margin-top:0px;
+    }
+    .last {
+        margin-bottom:0px;
+    }
+    .drink-col-mid{
+        justify-content: center;
+    }
+    .beer-list{
+        width:100%;
+    }
+    .beer-list h1{
+        border-bottom:none;
+    }
 }
 @media only screen and (max-width:500px){
     .home-second-row{
@@ -1689,6 +1761,24 @@ input{
     }
     .grand-opening-container{
         font-size:30px;
+    }
+    #menu-header-container{
+        height:80px;
+    }
+    #drinkheader,#foodheader{
+        font-size:30px;
+    }
+    .hide-menu-word{
+        display:none;
+    }
+    .hide-menu-word-drink{
+        display:flex;
+    }
+    .menu-item h1{
+        width:90%;
+    }
+    .menu-item p{
+        width:75%;
     }
 }
 @media only screen and (max-width:450px){
