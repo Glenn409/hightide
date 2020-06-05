@@ -99,6 +99,7 @@ $('.drink').on('click',function(){
     $('.drink-menu').show()
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
+    $('.sub-header-button').removeCLass('menu-cursor-hover')
     $('.classics').show();
     $('.classics-button').addClass('menu-cursor-hover')
     $('.drink').css("background-color", '#1e1e1e')
