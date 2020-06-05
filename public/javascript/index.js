@@ -1,5 +1,8 @@
 $(document).ready(function(){
     //----firstfooter img slider
+    if (jQuery(window).width() > 500) {
+        $(".hide-menu-word-drink").show()
+    }
     setInterval(function() { 
         $('.slide-window').animate({
             right:'+=100%',
