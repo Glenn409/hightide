@@ -693,7 +693,7 @@ height:150px;
     opacity: 0.2;
 }
 .menu-sub-header-drinks,.menu-sub-header-food{
-    margin-top:10px;
+    padding-top:10px;
     display:flex;
     background-color:#1E1E1E;
     color:white;

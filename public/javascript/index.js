@@ -101,7 +101,7 @@ $('.drink').on('click',function(){
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
-    $('.sub-header-button').removeCLass('menu-cursor-hover')
+    $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.classics').show();
     $('.classics-button').addClass('menu-cursor-hover')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
