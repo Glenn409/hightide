@@ -131,11 +131,11 @@ $('.drink').on('click',function(){
   $(".dropdown-icon").click(function(e){
     e.preventDefault();
     e.stopPropagation();
-    $('.dropdown-content').slideToggle(150)
+    $('.dropdown-content').slideToggle()
     var isVisible = $('.dropdown-content').is(':visible')
     if(isVisible){
         $(document).on('click',function(){
-            $(".dropdown-content").slideUp(150)
+            $(".dropdown-content").slideUp()
         })
     }
   });

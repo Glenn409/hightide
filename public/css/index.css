@@ -1457,7 +1457,9 @@ input{
         padding-left:15px;
         margin-top:20px;
         font-size:35px;
+        margin-bottom:0px;
         border-bottom:none;
+        padding-bottom:0px;
     }
     .menu-content-container p{
         font-size:16px;
@@ -1772,7 +1774,7 @@ input{
         display:none;
     }
     .hide-menu-word-drink{
-        display:flex;
+        display:block;
     }
     .menu-item h1{
         width:90%;
