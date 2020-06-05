@@ -97,13 +97,13 @@ $('.food').on('click',function(){
 $('.drink').on('click',function(){
     $('.food-menu').hide()
     $('.drink-menu').show()
+    $('.drink').css("background-color", '#1e1e1e')
+    $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
     $('.sub-header-button').removeCLass('menu-cursor-hover')
     $('.classics').show();
     $('.classics-button').addClass('menu-cursor-hover')
-    $('.drink').css("background-color", '#1e1e1e')
-    $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
 })

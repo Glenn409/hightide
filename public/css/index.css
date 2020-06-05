@@ -693,6 +693,7 @@ height:150px;
     opacity: 0.2;
 }
 .menu-sub-header-drinks,.menu-sub-header-food{
+    margin-top:10px;
     display:flex;
     background-color:#1E1E1E;
     color:white;
@@ -1437,6 +1438,7 @@ input{
     .menu-sub-header-drinks,.menu-sub-header-food{
         flex-direction:column;
         height:inherit;
+        margin-top:0px;
     }
     .menu-content-container{
         display:none;
