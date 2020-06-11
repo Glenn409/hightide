@@ -1183,6 +1183,7 @@ input{
     background-color:white !important;
     color:black !important;
 }
+
 .beer-list{
     display:flex;
     flex-direction: column;

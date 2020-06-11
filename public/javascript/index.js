@@ -95,17 +95,21 @@ $('.food').on('click',function(){
     $('#foodheader').css('border-bottom','4px solid #ff3030')
 })
 $('.drink').on('click',function(){
+    $('.menu-section-container').hide()
     $('.food-menu').hide()
     $('.drink-menu').show()
     $('.menu-sub-header-drinks').show()
     $('.menu-sub-header-food').hide()
-    $('.sub-header-button').removeCLass('menu-cursor-hover')
-    $('.classics').show();
-    $('.classics-button').addClass('menu-cursor-hover')
     $('.drink').css("background-color", '#1e1e1e')
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
+    $('.sub-header-button').removeClass('menu-cursor-hover')
+    $('.sub-header-button').css('color','white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+    $('.classics').show();
+    $('.classics-button').addClass('menu-cursor-hover')
+
 })
 // $('#foodheader').hover(function(){
 //     $(this).css("border-bottom",'4px solid #ff3030').fadeIn(500)
