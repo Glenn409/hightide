@@ -9,7 +9,9 @@ body {
     color: inherit;
     text-decoration: inherit;
 }
-
+.w-fix{
+    font-family: Cambria, sans-serif !important;
+}
 .mobile-menu{
     display:none;
 }
@@ -67,6 +69,7 @@ body {
     padding-top:10px;
     padding-bottom:10px;
 }
+
 .nav-button{
     display:flex;
     align-items: center;
@@ -740,13 +743,13 @@ height:150px;
 .drink-col-left,.drink-col-right{
     width:100%;
 }
-.drink-menu{
+.drink-menu,.food-menu{
     text-align:center;
     height:100%;
     display:flex;
     flex-direction:column;
 }
-.drink-menu h1{
+.drink-menu h1,.food-menu h1{
     font-family: 'minya_nouvelleregular',sans-serif;
     font-weight:bold;
     font-size:30px;
@@ -754,17 +757,42 @@ height:150px;
     margin-bottom:15px;
     color:red;
 }
-.drink-section{
+.drink-section,.food-section{
     font-weight:bold;   
     display:flex;
     justify-content: center;
 }
-h1.drink-section-title{
+h1.drink-section-title, h1.food-section-title{
     margin-top:40px;
     padding-bottom:20px;
     margin-bottom:15px;
     font-size:50px;
-    border-bottom:1px solid black;
+    color:#ff3030;
+    /* border-bottom:1px solid black; */
+}
+h1.handheld-subtitle,h1.bold-subtitle{
+    color: black;
+    font-size:26px;
+}
+h1.salad-addons, .dressings-container h1 {
+    font-size:32px;
+    color:black;
+    font-weight: bold;
+}
+h1.salad-choice{
+    color:black;
+    font-size:22px;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+.salad-price{
+    font-size:26px;
+    padding-right:15px;
+}
+.dressings-container p{
+    font-size:22px;
+    font-family: 'minya_nouvelleregular',sans-serif !important;
+    font-weight:bold;
 }
 .menu-item{
     width:90%;
@@ -1192,28 +1220,28 @@ input{
     background-color:white !important;
     color:black !important;
 }
-.beer-list{
+.beer-list,.food-list{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.drink-col-mid{
+.drink-col-mid,.food-col-mid{
     display:flex;
     width:100%;
     justify-content: space-around;
     align-items: flex-start;
 }
-.beer-list{
+.beer-list,.food-list{
     line-height:1.2;
     margin-bottom:20px;
 }
-.beer-list p{
+.beer-list p,.food-list p{
     color:black;
     font-size:26px;
     font-family: 'minya_nouvelleregular',sans-serif;
 }
-.beer-list h1 {
+.beer-list h1, .food-list h1 {
     color:#ff3030;
     width:100%;
     border-bottom:1px solid gray;
@@ -1461,7 +1489,7 @@ input{
     .menu-content-container h1{
         font-size:22px;
     }
-    h1.drink-section-title{
+    h1.drink-section-title,h1.food-section-title{
         padding-right:15px;
         padding-left:15px;
         margin-top:20px;
@@ -1473,15 +1501,15 @@ input{
     .menu-content-container p{
         font-size:16px;
     }
-    .drink-section-title{
+    .drink-section-title,.food-section-title{
         color:red;
     }
-    .beer-list h1{
+    .beer-list h1,.food-list h1{
         font-size:35px;
         margin-top:20px;
         padding-bottom:10px;
     }
-    .beer-list p{
+    .beer-list p.food-list p{
         font-size:18px;
     }
     .coming-soon-food{
@@ -1779,10 +1807,10 @@ input{
     .drink-col-mid{
         justify-content: center;
     }
-    .beer-list{
+    .beer-list, .food-list{
         width:100%;
     }
-    .beer-list h1{
+    .beer-list h1, .food-list h1{
         border-bottom:none;
     }
 }

@@ -18,9 +18,9 @@ $(document).ready(function(){
     $('.banner3').hide()
     $('.menu-sub-header-drinks').hide()
     $('.menu-section-container').hide()
-    $('.classics').show();
-    $('.classics-button').css('color','white')
-    $('.classics-button').css("background-color",'#1e1e1e')
+    // $('.classics').show();
+    // $('.classics-button').css('color','white')
+    // $('.classics-button').css("background-color",'#1e1e1e')
     //---a interval for rotating banners at the top of page
     // let num = 1;
     // setInterval(function(){
@@ -98,6 +98,13 @@ $('.food').on('click',function(){
     $('.menu-sub-header-food').show();
     $('.menu-sub-header-drinks').hide()
     $('#foodheader').css('border-bottom','4px solid #ff3030')
+    $('.menu-section-container').hide()
+    $('.sub-header-button').removeClass('menu-cursor-hover')
+    $('.sub-header-button').css("color",'white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+    $('.small-bites').show();
+    $('.small-bites-button').addClass('menu-cursor-hover')
+    
 })
 $('.drink').on('click',function(){
     $('.food-menu').hide()
@@ -107,6 +114,10 @@ $('.drink').on('click',function(){
     $('.drink').css("background-color", '#1e1e1e')
     $('.food').css('background-color', 'rgb(44, 44, 44)')
     $('.sub-header-button').removeClass('menu-cursor-hover')
+    $('.sub-header-button').css("color",'white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+
+    $('.menu-section-container').hide()
     $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
     $('#drinkheader').css('border-bottom','4px solid #ff3030')
     $('.classics').show();
@@ -321,7 +332,26 @@ $('.beer-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.beer').show()
 })
-
+$('.small-bites-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.small-bites').show()
+})
+$('.handhelds-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.handhelds').show()
+})
+$('.bowls-button').on("click",function(){
+    $('.menu-section-container').hide()
+    $('.bowls').show()
+})
+$(".salads-button").on("click",function(){
+    $('.menu-section-container').hide()
+    $('.salads').show()
+})
+$('.sides-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.sides').show()
+})
 // ---- MENU JQUERY FOR MOBILE ------
 $('.classics-mobile-button').on('click',function(){
     $('.classics-mobile').slideToggle(400, 'linear')
