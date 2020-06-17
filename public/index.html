@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link rel="shortcut icon" type='image/png'href="/images/favicon.png"/>
     <script src="https://kit.fontawesome.com/99839c4b92.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Patua+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -16,7 +15,7 @@
     <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
     <script type="text/javascript"> 
                ttd_dom_ready( function() {
-                        if (typeof TTDUniversalPixelApi === 'function') {
+                        if (typeof TTDUniversalPixelApi === 'function') {1
                             var universalPixelApi = new TTDUniversalPixelApi();
                             universalPixelApi.init("l1afj2o", ["2ezmhqt"], "https://insight.adsrvr.org/track/up");
                             }  
@@ -24,7 +23,7 @@
     </script>
     <title>HighTide</title>
 </head>
-<body
+<body>
     <!-- first nav bar -->
     <div class='top-nav'>
         <div class="top-nav-container">
@@ -87,7 +86,7 @@
     </div>
     <!-- banner that rotates -->
 
-        <div class='home-second-row'>
+        <!-- <div class='home-second-row'>
             <div class='transparent-background'>
                 <div class='second-row-left'>
                     <image src='images/mainlogotransparent.png'/>
@@ -112,10 +111,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    <!-- <div class='banner banner1'></div>
+        </div> -->
+    <div class='banner banner1'></div>
     <div class='banner banner2'></div>
-    <div class="banner banner3"></div> -->
+    <div class="banner banner3"></div>
 
     <nav class='nav-bar'>
         <div class='size-div'>
@@ -200,12 +199,11 @@
             </div>
 
             <div class='event-container'>
-                <div data-tockify-component="calendar" data-tockify-calendar="hightide21">
-                </div>
+                <div data-tockify-component="calendar" data-tockify-calendar="chelsea.amptmeyer"></div>
                 <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-                <h1>Event Schedule Coming Soon!</h1>
+                <!-- <h1>Event Schedule Coming Soon!</h1>
                 <div class='test-background'>
-                </div>
+                </div> -->
                 <!-- <div data-tockify-component="mini" data-tockify-calendar="hightide21"></div>
 <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script> -->
             </div>
@@ -215,27 +213,42 @@
                     <!-- MENU DRINK/FOOD TAB-->
                     <div id='menu-header-container'>
                         <div class='menu-header food'>
-                            <p id='foodheader'>Food Menu</p>
+                            <p id='foodheader'>Food <span class='hide-menu-word'>Menu</span></p>
                         </div>
                         <div class='menu-header drink'>
-                            <p id='drinkheader'>Drink Menu</p>
+                            <p id='drinkheader'>Drink <span class='hide-menu-word'>Menu</span></p>
                         </div>
                     </div>
                     <div class='menu-sub-header-food'>
-                        <div class='sub-header-button'>
-                            <h1>Bowls</h1>
+                        <div class='sub-header-button small-bites-button desktop'>
+                            <h1>Small Bites</h1>
                         </div>
-                        <div class='sub-header-button'>
-                            <h1>Burgers</h1>
+                        <div class='sub-header-button small-bites-mobile-button mobile'>
+                            <h1>Small Bites</h1>
                         </div>
-                        <div class='sub-header-button'>
-                            <h1>Tacos</h1>
+                        <div class='sub-header-button handhelds-button desktop'>
+                            <h1>Handhelds</h1>
                         </div>
-                        <div class='sub-header-button'>
-                            <h1>Wraps</h1>
+                        <div class='sub-header-button handhelds-mobile-button mobile'>
+                            <h1>Handhelds</h1>
                         </div>
-                        <div class='sub-header-button'>
-                            <h1>Sides</h1>
+                        <div class='sub-header-button bowls-button desktop'>
+                            <h1>Bo<span class='w-fix'>w</span>ls</h1>
+                        </div>
+                        <div class='sub-header-button bowls-mobile-button mobile'>
+                            <h1>Bo<span class='w-fix'>w</span>ls</h1>
+                        </div>
+                        <div class='sub-header-button salads-button desktop'>
+                            <h1>Salads</h1>
+                        </div>
+                        <div class='sub-header-button salads-mobile-button mobile'>
+                            <h1>Salads</h1>
+                        </div>
+                        <div class='sub-header-button sides-button desktop'>
+                            <h1>Sides / Desserts</h1>
+                        </div>
+                        <div class='sub-header-button sides-mobile-button mobile'>
+                            <h1>Sides / Desserts</h1>
                         </div>
                     </div>
 
@@ -266,7 +279,7 @@
                                             <h1>Pain Killer | 9</h1>
                                             <p>Pusser's Rum, Caption Morgan Loco Nut, pineapple juice, orange juice, splash of coconut puree, topped with fresh nutmeg</p>
                                         </div>
-                                        <div class='menu-item'>
+                                        <div class='menu-item last'>
                                             <h1>Mango Tango Martini | 9</h1>
                                             <p>Effen Blood Orange Vodka infused with pineapple and mango puree</p>
                                         </div>
@@ -313,7 +326,7 @@
                                         <h1>Redhead Rum Punch</h1>
                                         <p>Cruzan Banana Rum, Cruzan Strawberrry Rum, orange juice & San Pellegrino Blood Orange</p>
                                     </div>
-                                    <div class='menu-item'>
+                                    <div class='menu-item last'>
                                         <h1>Cherry Limeade</h1>
                                         <p>Hornitos Plata Tequila, cherry, club soda, splash of lime juice</p>
                                     </div>
@@ -348,7 +361,7 @@
                                         <h1>Best House Margarita | 9</h1>
                                         <p>Hornitos Reposado Tequila, Dekuyper Triple Sec, house made sour and a splash of orange juice</p>
                                     </div>
-                                    <div class='menu-item'>
+                                    <div class='menu-item last'>
                                         <h1>Skinny Margaritas | 9</h1>
                                         <p>Milagro Tequila, Cointreau, agave nectar, fresh lime juice, a splash of house made sour and topped with club soda</p>
                                     </div>
@@ -378,7 +391,7 @@
                                         <h1>American Mule</h1>
                                         <p>Tito's handmade Vodka, Gosling's Ginger Beer, splash of lime juice</p>
                                     </div>
-                                    <div class='menu-item'>
+                                    <div class='menu-item last'>
                                         <h1>Peach Mule</h1>
                                         <p>Deep Eddy Peach, Gosling's Ginger Beer, Splash of lime juice</p>
                                     </div>
@@ -412,7 +425,7 @@
                                         <h1>Mojito</h1>
                                         <p>Cruzan Citrus Rum, simple syrup, mint, fresh lime and club soda</p>
                                     </div>
-                                    <div class='menu-item'>
+                                    <div class='menu-item last'>
                                         <h1>Mango Mojito</h1>
                                         <p>Cruzan Mango Rum, simple syrup, mint, fresh lime and club soda</p>
                                     </div>
@@ -435,7 +448,7 @@
                         </div>
                         <div class='menu-content-container frozen-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
-                            <h1 class='drink-section-title'>Frozen | 9</h1>
+                            <h1 class='drink-section-title'>Frozens | 9</h1>
                             <div class='drink-section'>
                                 <div class='drink-col-left'>
                                     <div class='menu-item'>
@@ -450,7 +463,7 @@
                                         <h1>Bananas Foster</h1>
                                         <p>Pinnacle Vanilla Vodka, Sailor Jerry Spiced Rum, DeKuyper Butterscotch Schnapps, mixed wtih banana puree</p>
                                     </div>
-                                    <div class='menu-item'>
+                                    <div class='menu-item last'>
                                         <h1>Cocobango</h1>
                                         <p>Cruzan Coconut Rum mixed with mango puree and banana puree</p>
                                     </div>
@@ -519,8 +532,176 @@
                         <img src='/images/rhgirlblank.jpg'>
 
                             <div class='food-menu'>
-                                this is a test food menu
-                            </div>
+                                <div class='menu-section-container small-bites'>
+                                    <h1 class='food-section-title'>Small Bites</h1>
+                                    <div class='food-section'>
+                                        <div class='food-col-left'>
+                                            <div class='menu-item'>
+                                                <h1>High Tide Hummus | 10</h1>
+                                                <p>blend of chickpeas, tahini, garlic, and olive oil served with pita bread and vegatables.</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Eggplant Hummus | 11</h1>
+                                                <p>blend of eggplant, tahini, garlic, herbs, and olive oil served with pita bread and vegatables.</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Pita Chip Nachos | 14</h1>
+                                                <p>tomatoes, onions, pepperoncinis, green onions, and feta cheese sided with tzatziki. (choice of chicken or gyro meat)</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Greek Fried Cheese | 10</h1>
+                                                <p>our version of the classic friend cheese, kasseri cheese wrapped in phyllo dough and fried.</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Falafel | 11</h1>
+                                                <p>fried blend of chickpeas and spices, served with tzatziki.</p>
+                                            </div>
+                                        </div>
+                                        <div class='food-col-right'>
+                                            <div class='menu-item'>
+                                                <h1>Calamari | 14</h1>
+                                                <p>fried squid and pepperoncinis served with romesco sauce.</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Peel 'n' Eat Shrimp</h1>
+                                                <p>boiled shrimp in a blend of spices, served cold with cocktail sauce. <br>(1/2 lb.) 14 <br>(1 lb) 20</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Crispy Brussel Sprouts | 12</h1>
+                                                <p>tossed in feta cheese, candied red onions, toasted walnuts, and drizzled with romesco sauce.</p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Fried Chicken Legs | 13</h1>
+                                                <p>mediterranean brined chicken legs slow cooked, fried, and then tossed in herbs and seasonings./p>
+                                            </div>
+                                            <div class='menu-item'>
+                                                <h1>Feta Cheese Dip | 12</h1>
+                                                <p>creamy dip of feta cheese and spices topped with spiced walnuts and honey served with pita bread and vegatables.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class='menu-section-container handhelds'>
+                                    <h1 class='food-section-title'>Handhelds</h1>
+                                        <div class='food-section'>
+                                            <div class='food-col-left'>
+                                                <div class='menu-item'>
+                                                    <h1>Gyro | 14</h1>
+                                                    <p>pita bread, rotisserie lamb and beef mix, onion, tomatao, and tzatziki</p>
+                                                </div>
+                                                <div class='menu-item'>
+                                                    <h1>Chicken Gyro | 13</h1>
+                                                    <p>pita bread, garlic, chicken, onion, tomato, and tzatziki</p>
+                                                </div>
+                                                <div class='menu-item'>
+                                                    <h1>Falafel | 11</h1>
+                                                    <p>friend blend of chickpeas and spices, and served on pita bread with romaine, tomato, onion, tzatziki, and hummus.</p>
+                                                </div>
+                                            </div>
+                                            <div class='food-col-right'>
+                                                <div class='menu-item'>
+                                                    <h1>Mediterranean Chicken Sandwich | 15</h1>
+                                                    <p>grilled chicken, sun-dried tomato pesto, candied red onions, and feta cheese on an artisana bun.</p>
+                                                </div>
+                                                <div class='menu-item'>
+                                                    <h1>Cheeseburger | 13.50</h1>
+                                                    <p>angus beef patty on an artisan bun with choice of american, feta, bleu, cheddar, pepper jack, or swiss cheese.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <h1 class='handheld-subtitle'>served with choice of side</h1>
+                                        <h1 class='bold-subtitle'>gluten-free pita bread add $2</h1>
+                                    </div>
+
+                                    
+
+                                    <div class='menu-section-container bowls'>
+                                        <h1 class='food-section-title'>Bowls</h1>
+                                            <div class='food-section'>
+                                                <div class='food-col-left'>
+                                                    <div class='menu-item'>
+                                                        <h1>Gyro Bowl | 16</h1>
+                                                        <p>gyro meat, rice, onion, roasted bell pepper, tomato, and tzatziki.</p>
+                                                    </div>
+                                                    <div class='menu-item'>
+                                                        <h1>Chicken Bowl | 14</h1>
+                                                        <p>chicken, rice, onion, roasted red bell pepper, pepperoncinis, tomato, and harissa sauce.</p>
+                                                    </div>
+                                                </div>
+                                                <div class='food-col-right'>
+                                                    <div class='menu-item'>
+                                                        <h1>Shrimp Bowl | 18</h1>
+                                                        <p>shrimp, rice, onion, roasted red bell pepper, spinach, tomato, and lemon sauce.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h1 class='bold-subtitle'>substitude riced cauliflower add $2</h1>
+                                        </div>
+    
+                                    <div class='menu-section-container salads'>
+                                        <h1 class='food-section-title'>Salads</h1>                        
+                                            <div class='food-section'>
+                                                <div class='food-col-left'>
+                                                    <div class="menu-item">
+                                                        <h1>Greek | 10</h1>
+                                                        <p>romaine, tomatoes, onions, cucumbers, kalamata olives, feta cheese, and greek vinaigrette.</p>
+                                                    </div>
+                                                    <div class='menu-item'>
+                                                        <h1>Plato | 11</h1>
+                                                        <p>spinach, tomatoes, onions, beets, feta cheese, and carrot.</p>
+                                                    </div>
+                                                    <div class='menu-item'>
+                                                        <h1>Salad Addons</h1>
+                                                        <p>Chicken 3</p>
+                                                        <P>Gyro Meat 5</P>
+                                                        <p>Shrimp 6</p>
+                                                    </div>
+                                                </div>
+                                                <div class='food-col-right'>
+                                                    <div class='menu-item'>
+                                                        <h1>Village | 9</h1>
+                                                        <p>tomatoes, onions, cucumbers, bell peppers, feta cheese, and olives</p>
+                                                    </div>
+                                                    <div class='menu-item'>
+                                                        <h1>Poseidon | 16</h1>
+                                                        <p>chopped romaine, dill, green onions, feta cheese, tomatoes, and shrimp.</p>
+                                                    </div>
+                                                    <div class='menu-item'>
+                                                        <h1>Dressings</h1>
+                                                        <p>Ranch, Bleu Cheese, Greek Vinaigrette, Lemon Vinaigrette, Balsamic Vinaigrette</p>
+                                                        <br>
+                                                        <p>* extra side of dressing $.75</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                
+                                    <div class='menu-section-container sides'>
+                                        <h1 class='food-section-title'></h1>
+                                            <div class='food-section'>
+                                                <div class='food-col-mid'>
+                                                    <div class='food-list'>
+                                                        <h1>Sides</h1>
+                                                        <p>French Fries |  3</p>
+                                                        <p>Cucumber, Tomato, Onion, and Feta Salad | 3</p>
+                                                        <p>Tabbouleh | 3</p>
+                                                    </div>
+                                                    <div class='food-list'>
+                                                        <h1>Desserts</h1>
+                                                        <p>Baklava | 6</p>
+                                                        <p>Ice Cream | 6</p>
+                                                        <p>Ice Cream Sandwich | 8</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                              
+
 
                             <div class='drink-menu'>
 
@@ -749,81 +930,6 @@
                             </div>
                     </div>
                 </div>
-                <!-- <div class='menu-display-container'>
-                    <div class='coming-soon-blur'>
-                        <div id='menu-header-container'>
-                            <div class='menu-header food'>
-                                <p id='foodheader'>Food Menu</p>
-                            </div>
-                            <div class='menu-header drink'>
-                                <p id='drinkheader'>Drink Menu</p>
-                            </div>
-                        </div>
-                        <div class='menu-content'>
-                            <div class='food-content'>
-                                <div class='food-categories'>
-                                    <h1 id='top-category'></h1>
-                                    <h1 id='burgers'>Burgers</h1>
-                                    <h1 id='pizza'>Pizza</h1>
-                                    <h1 id='tacos'>Tacos</h1>
-                                    <h1 id='kids'>Kids</h1>
-                                    <h1 id='sides'>Starters</h1>
-                                </div>
-                                <div class='food-display-container'>
-                                    <div class='menu-section'>Burgers</div>
-                                    <div class='burgers-menu'>
-                                        <div class='left-food'
-                                            <div class='food-display'>
-                                                <h1 class='food-name'>BLACK N BLEU BURGER</h1>
-                                                <p class='food-description'>Prime ground beef patty covered with bleu
-                                                    cheese crumbles, bleu cheese dressing and
-                                                    peppered bacon on an artisan bun <span id='price'>15</span>
-                                                </p>
-                                            </div>
-                                            <div class='food-display'>
-                                                <h1 class='food-name'>CHEESEBURGER</h1>
-                                                <p class='food-description'>Prime ground beef patty covered with bleu
-                                                    cheese crumbles, bleu cheese dressing and
-                                                    peppered bacon on an artisan bun <span id='price'>15</span>
-                                                </p>
-                                            </div>
-                                            <div class='food-display'>
-                                                <h1 class='food-name'>REDHEAD BURGER</h1>
-                                                <p class='food-description'>Prime ground beef patty covered with bleu
-                                                    cheese crumbles, bleu cheese dressing and
-                                                    peppered bacon on an artisan bun <span id='price'>15</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class='right-food'>
-                                            <div class='food-display'>
-                                                <h1 class='food-name'>CHEESEBURGER</h1>
-                                                <p class='food-description'>Prime ground beef patty covered with bleu
-                                                    cheese crumbles, bleu cheese dressing and
-                                                    peppered bacon on an artisan bun <span id='price'>15</span>
-                                                </p>
-                                            </div>
-                                            <div class='food-display'>
-                                                <h1 class='food-name'>REDHEAD BURGER</h1>
-                                                <p class='food-description'>Prime ground beef patty covered with bleu
-                                                    cheese crumbles, bleu cheese dressing and
-                                                    peppered bacon on an artisan bun <span id='price'>15</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                            </div>
-                            <div class='drink-content'>
-                                drink
-                            </div>
-                        </div>
-                    </div>
-                    <div class='coming-soon-text'>
-                        <h1>HighTides Menu Coming Soon!</h1>
-                    </div>
-                </div> -->
 
             <div class='redheads-row'>
                 <div class='transparent-container'>
@@ -840,10 +946,10 @@
                             <p><span class='twentyone'>21</span> Mile Marker</p>
                         </div>
                         <div class='redheads-right'>
-                            <p id='award'>- Voted the <span class='twentyone'>Best</span> Waterfront Dining 3 Years in a Row -</p>
-                            <p>- Family Friendly -</p>
-                            <p>- Offers an exciting blend of food, drink, & swimming -</p>
-                            <button id='redheads-redirect-button'><a href='http://redheadlakesidegrill.businesscatalyst.com/menu.html'>View Our Menu</a></button>
+                            <p id='award'>Voted the <span class='twentyone'>Best</span> Waterfront Dining 3 Years in a Row</p>
+                            <p>Family Friendly</p>
+                            <p>Offers an exciting blend of food, drink, & swimming</p>
+                            <button id='redheads-redirect-button'><a target='_blank' href='http://redheadlakesidegrill.businesscatalyst.com/menu.html'>Menu</a></button>
                         </div>
                     </div>
                     <div class='redheads-content'>
@@ -871,24 +977,25 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50208.36633688816!2d-92.71545567812854!3d38.1396605856038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c4c49e35c352af%3A0x86b1668784798ef4!2s1700%20Yacht%20Club%20Dr%2C%20Osage%20Beach%2C%20MO%2065065!5e0!3m2!1sen!2sus!4v1589908616432!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>           
             </div>
             <div class="contact-right">
-                <div class='contact-header'>
-                    <image src='images/girllg.png'></image>
-                    <h1>Contact Us</h1>
-                </div>
-                <form class='contact-form'  id='contact-us-form'>
-                    <label>Name:</label>
-                    <input type='text' id='name' name='name'placeholder='Enter Name' >
-                    <p id='name-error' class='error'></p>
-                    <label>Email: </label>
-                    <input type='text' id='email' name='email' placeholder ='Enter Email'>
-                    <p id='email-error' class='error'></p>
-                    <label>Message: </label>
-                    <textarea type='text' id='message' name='message'placeholder="Enter Your Message"></textarea>
-                    <p id='msg-error' class='error'></p>
-                    <button id='contact-submit'>Submit</button>
-                    <p id='email-status'></p>
-                </form>
+                    <div class='contact-header'>
+                        <image src='images/girllg.png'></image>
+                        <h1>Contact Us</h1>
+                    </div>
+                    <form class='contact-form'  id='contact-us-form'>
+                        <label>Name:</label>
+                        <input type='text' id='name' name='name'placeholder='Enter Name' >
+                        <p id='name-error' class='error'></p>
+                        <label>Email: </label>
+                        <input type='text' id='email' name='email' placeholder ='Enter Email'>
+                        <p id='email-error' class='error'></p>
+                        <label>Message: </label>
+                        <textarea type='text' id='message' name='message'placeholder="Enter Your Message"></textarea>
+                        <p id='msg-error' class='error'></p>
+                        <button id='contact-submit'>Submit</button>
+                        <p id='email-status'></p>
+                    </form>
 
+                </div>
             </div>
         </div>
     </div>

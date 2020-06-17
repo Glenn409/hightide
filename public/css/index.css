@@ -9,32 +9,38 @@ body {
     color: inherit;
     text-decoration: inherit;
 }
+.w-fix{
+    font-family: Cambria, sans-serif !important;
+}
 .mobile-menu{
+    display:none;
+}
+.hide-menu-word-drink{
     display:none;
 }
 .banner1{
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('../images/banner1rh.jpg');
+    background-image: url('../images/Sky-11.jpg');  
     background-size:100%;
-    background-position: 50% 70%;
+    background-position: 50% 80%;
 }
 .banner2{
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('../images/banner2.jpeg');
+    background-image: url('../images/people.jpg');
     background-size: 100%;
-    background-position: 50% 70%;
+    background-position: 50% 50%;
 }
 .banner3{
     width:100%;
     height:600px;
     border-bottom:3px solid #1e1e1e;
-    background-image: url('../images/banner3.jpg');
+    background-image: url('../images/Sky-6.jpg');
     background-size: 100%;
-    background-position: 50% 30%;
+    background-position: 50% 60%;
 }
 
 .size-div{
@@ -48,8 +54,7 @@ body {
     margin-right:auto;
 }
 .nav-bar{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     font-weight: 300;
     margin-bottom:100px;
     height:120px;
@@ -64,6 +69,7 @@ body {
     padding-top:10px;
     padding-bottom:10px;
 }
+
 .nav-button{
     display:flex;
     align-items: center;
@@ -119,6 +125,8 @@ body {
 
 }
 #circle-logo{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+
     display:block;
     z-index: 1;
     max-height:250px;
@@ -277,7 +285,7 @@ footer {
 
 
 .menu-container{
-
+    border-top-left-radius: 10px;
 }
 
 .menu-display-container{
@@ -507,9 +515,8 @@ footer {
 .second-row-right h1{
     font-family:'minya_nouvelleregular',sans-serif;
     text-align: center;
-    margin-bottom:10px;
     font-size:28px;
-    padding-bottom:30px;
+    padding-bottom:20px;
     border-bottom:1px solid white;
 }
 .second-row-right p{
@@ -634,7 +641,7 @@ height:150px;
     justify-content: center;
 }
 .food{
-    border-right:1px solid red;
+    border-right:3px solid #ff3030;
 }
 .drink{
     background-color:rgb(44, 44, 44);
@@ -693,6 +700,7 @@ height:150px;
     opacity: 0.2;
 }
 .menu-sub-header-drinks,.menu-sub-header-food{
+    padding-top:10px;
     display:flex;
     background-color:#1E1E1E;
     color:white;
@@ -706,13 +714,15 @@ height:150px;
     border-top:1px solid gray;
     font-family: 'minya_nouvelleregular',sans-serif;
 }
-.menu-sub-header-drinks{
-    /* display:none; */
+.coming-soon-food{
+    width:100%;
+    font-size:40px;
+    text-align: center;
 }
 .sub-header-button{
     padding-left: 5px;
     padding-right:5px;
-    margin-top:10px;
+    /* margin-top:10px; */
     cursor:pointer;
     width:100%;
     height:100%;
@@ -721,25 +731,20 @@ height:150px;
     justify-content: center;
     border-top-left-radius: 10px;
     border-top-right-radius:10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);=
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 
 }
-.sub-header-button:hover{
-    /* background-color:white;
-    color:black; */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);= */
 
-}
 .drink-col-left,.drink-col-right{
     width:100%;
 }
-.drink-menu{
+.drink-menu,.food-menu{
     text-align:center;
     height:100%;
     display:flex;
     flex-direction:column;
 }
-.drink-menu h1{
+.drink-menu h1,.food-menu h1{
     font-family: 'minya_nouvelleregular',sans-serif;
     font-weight:bold;
     font-size:30px;
@@ -747,17 +752,42 @@ height:150px;
     margin-bottom:15px;
     color:red;
 }
-.drink-section{
+.drink-section,.food-section{
     font-weight:bold;   
     display:flex;
     justify-content: center;
 }
-h1.drink-section-title{
+h1.drink-section-title, h1.food-section-title{
     margin-top:40px;
     padding-bottom:20px;
     margin-bottom:15px;
     font-size:50px;
-    border-bottom:1px solid black;
+    color:#ff3030;
+    /* border-bottom:1px solid black; */
+}
+h1.handheld-subtitle,h1.bold-subtitle{
+    color: black;
+    font-size:26px;
+}
+h1.salad-addons, .dressings-container h1 {
+    font-size:32px;
+    color:black;
+    font-weight: bold;
+}
+h1.salad-choice{
+    color:black;
+    font-size:22px;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+.salad-price{
+    font-size:26px;
+    padding-right:15px;
+}
+.dressings-container p{
+    font-size:22px;
+    font-family: 'minya_nouvelleregular',sans-serif !important;
+    font-weight:bold;
 }
 .menu-item{
     width:90%;
@@ -971,14 +1001,16 @@ h1.drink-section-title{
     background-position: 100% 70%;
 }
 #redheads-redirect-button{
-    margin-top:10px;
-    margin-bottom:10px;
+    border-radius:10px;
+    margin-top:20px;
     background-color:red;
-    border-radius: 0px;
     color:white;
     font-family: sans-serif;
+    width:200px;
+    padding:5px;
 }
 #redheads-redirect-button a{
+    width:100%;
     text-decoration: none;
     color:white;
 }
@@ -1183,29 +1215,28 @@ input{
     background-color:white !important;
     color:black !important;
 }
-
-.beer-list{
+.beer-list,.food-list{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.drink-col-mid{
+.drink-col-mid,.food-col-mid{
     display:flex;
     width:100%;
     justify-content: space-around;
     align-items: flex-start;
 }
-.beer-list{
+.beer-list,.food-list{
     line-height:1.2;
     margin-bottom:20px;
 }
-.beer-list p{
+.beer-list p,.food-list p{
     color:black;
     font-size:26px;
     font-family: 'minya_nouvelleregular',sans-serif;
 }
-.beer-list h1 {
+.beer-list h1, .food-list h1 {
     color:#ff3030;
     width:100%;
     border-bottom:1px solid gray;
@@ -1217,7 +1248,9 @@ input{
 .mobile-menu{
     margin-top:10px;
 }
-
+.menu-display-container, .menu-header{
+    border-radius: 10px;
+}
 @media only screen and (max-width:1600px){
     .top-nav-container{
         width:100%;
@@ -1381,7 +1414,10 @@ input{
 @media only screen and (max-width:900px){
     #drinkheader, #foodheader{
         font-size:40px;
+        margin-top:15px;
+        margin-bottom:15px;
     }
+
     #menu-header-container{
         height:100px;
     }
@@ -1412,6 +1448,7 @@ input{
     }
     #redheads-redirect-button{
         width:200px;
+        margin-bottom:0px;
     }
     .redheads-content{
         display:none;
@@ -1432,22 +1469,69 @@ input{
     }
 }
 @media only screen and (max-width:767.98px){
-    .drink-section-title{
+    #drinkheader,#foodheader{
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size:35px;
+    }
+    .menu-content-container img{
+        left:2%;
+    }
+    
+    .menu-item h1{
+        width:90%;
+    }
+    .menu-content-container h1{
+        font-size:22px;
+    }
+    h1.drink-section-title,h1.food-section-title{
+        padding-right:15px;
+        padding-left:15px;
+        margin-top:20px;
+        font-size:35px;
+        margin-bottom:0px;
+        border-bottom:none;
+        padding-bottom:0px;
+    }
+    .menu-content-container p{
+        font-size:16px;
+    }
+    .drink-section-title,.food-section-title{
         color:red;
+    }
+    .beer-list h1,.food-list h1{
+        font-size:35px;
+        margin-top:20px;
+        padding-bottom:10px;
+    }
+    .beer-list p.food-list p{
+        font-size:18px;
+    }
+    .coming-soon-food{
+        font-size:30px;
+        padding-top:10px;
+        padding-bottom:10px;
     }
     .menu-sub-header-drinks,.menu-sub-header-food{
         flex-direction:column;
         height:inherit;
+        margin-top:0px;
+        padding-bottom:10px;
     }
     .menu-content-container{
         display:none;
     }
     .sub-header-button{
-        height:40px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6), 0 4px 15px 0 rgba(0, 0, 0, .6);
+        height:50px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius:10px;
     }
+    .sub-header-button h1{
+        font-size:24px;
+    }
     .home-second-row{
+        height:600px;
         background-size:200%;
     }
     .event-container h1{
@@ -1467,9 +1551,19 @@ input{
     .redheads-header h1{
         font-size:30px;
     }
+    .redheads-info p {
+        font-size:22px;
+    }
     .phone-number{
         display:flex;
         border-right:1px solid gray !important;
+    }
+    .redheads-right,.redheads-left{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .redheads-right{
+        padding-bottom:0px;
     }
     #milemarker-div{
         padding-left:0px;
@@ -1595,9 +1689,6 @@ input{
     .second-row-left img{
         width:90%;
     }
-    .home-second-row {
-        height:700px;
-    }
     .transparent-background{
         display:flex;
         align-items: center;
@@ -1660,6 +1751,21 @@ input{
     footer {
         height:100%;
     }
+    .second-row-right{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .second-row-right h1{
+        font-size:22px;
+        padding-bottom:10px;
+    }
+    .second-row-box p{
+        font-size:18px;
+    }
+    .second-row-box2 p{
+        font-size:18px;
+
+    }
 }
 
 @media only screen and (max-width:600px){
@@ -1678,6 +1784,30 @@ input{
         padding-right:0px;
         justify-content: space-between;
     }
+    .drink-section, .drink-col-mid{
+        flex-direction: column;
+    }
+    .menu-item h1{
+        width:70%;
+    }
+    .drink-col-right {
+        margin-top:0px;
+    }
+    .drink-col-left{
+        margin-top:0px;
+    }
+    .last {
+        margin-bottom:0px;
+    }
+    .drink-col-mid{
+        justify-content: center;
+    }
+    .beer-list, .food-list{
+        width:100%;
+    }
+    .beer-list h1, .food-list h1{
+        border-bottom:none;
+    }
 }
 @media only screen and (max-width:500px){
     .home-second-row{
@@ -1686,30 +1816,62 @@ input{
     .phone-number{
         display:none;
     }
+    .menu-content-container img{
+        left:-5%;
+    }
     .grand-opening-container{
         font-size:30px;
+    }
+    #menu-header-container{
+        height:80px;
+    }
+    #drinkheader,#foodheader{
+        font-size:30px;
+    }
+        
+    .hide-menu-word{
+        display:none;
+    }
+    #drinkheader {
+        content: 'Drinks';
+    }
+    .menu-item h1{
+        width:90%;
+    }
+    .menu-item p{
+        width:75%;
     }
 }
 @media only screen and (max-width:450px){
     .contact-header img{
         width:80px;
-
+    }
+    .menu-content-container img{
+        left:-18%;
     }
     .contact-header{
         font-size:35px;
     }
     .redheads-header h1{
-        font-size:22px;
+        font-size:26px;
+        padding-left:20px;
+        padding-right:20px;
     }
 }
 @media only screen and (max-width:400px){
     .redheads-header img{
         width:80%;
     }
+    .menu-content-container img{
+        left:-40%;
+    }
     .redheads-row{
         background-size:700%;
     }
     .home-second-row{
         background-size:500%;
+    }
+    .redheads-right p ,.redheads-left p{
+        font-size:18px;
     }
 }
