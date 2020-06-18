@@ -1355,7 +1355,7 @@ input{
 
     }
     .home-img-container{
-        width:90%;
+        width:75%;
     }
     .menu-content-container img {
         left:15%;
@@ -1512,6 +1512,9 @@ input{
     .menu-content-container img {
         left:10%;
     }
+    .grand-opening-container{
+        margin-top:100px;
+    }
     .grand-opening-container img{
         height:250px;
         margin-bottom:60px;
@@ -1583,7 +1586,7 @@ input{
         font-size:24px;
     }
     .home-second-row{
-        height:600px;
+        height:425px;
         background-size:200%;
     }
     .event-container h1{
@@ -1733,7 +1736,9 @@ input{
     }
     .grand-opening-container{
         font-size:40px;
-    }4
+        margin-top:120px;
+        margin-bottom:40px;
+    }
     .second-row-left img{
         width:90%;
     }
@@ -1815,7 +1820,15 @@ input{
 
     }
 }
-
+@media only screen and (max-width:700px){
+    .grand-opening-container img{
+        height:225px;
+        margin-bottom:55px;
+    }
+    .grand-opening-container p{
+        font-size: 40px;
+    }
+}
 @media only screen and (max-width:600px){
     .banner1 {
         background-size:130%;
@@ -1864,6 +1877,10 @@ input{
     .beer-list h1, .food-list h1{
         border-bottom:none;
     }
+    .grand-opening-container img{
+        margin-right:0px;
+        margin-left:10px;
+    }
 }
 @media only screen and (max-width:550px){
     .banner1{
@@ -1877,6 +1894,12 @@ input{
     }
 }
 @media only screen and (max-width:500px){
+    .home-img-container{
+        width:90%;
+    }
+    .home-content-box{
+        width:95%;
+    }
     .banner1{
         background-size:140%;
         background-position: 70% 90%;
@@ -1897,6 +1920,18 @@ input{
         left:-5%;
     }
     .grand-opening-container{
+        /* margin-top:100px; */
+        height:100px;
+        padding-left:0px;
+        padding-right:0px;
+        width:100%;
+    }
+    .grand-opening-container img{
+        height:200px;
+        margin-right:0px;
+        padding-left:5px;
+    }
+    .grand-opening-container p {
         font-size:30px;
     }
     #menu-header-container{
@@ -1940,6 +1975,19 @@ input{
         padding-left:20px;
         padding-right:20px;
     }
+    .grand-opening-container img{
+        margin-left:10px;
+    }
+    .left p,.right p, .second-row-box2 p{
+        font-size:15px;
+    }
+    .second-row-box{
+        flex-direction: column;
+    }
+    .home-second-row {
+        height:450px;
+        background-position: 20% 50%;
+    }
 }
 @media only screen and (max-width:400px){
     .banner1{
@@ -1963,4 +2011,19 @@ input{
     .redheads-right p ,.redheads-left p{
         font-size:18px;
     }
+    .grand-opening-container{
+        height:90px;
+    }
+    .grand-opening-container p{
+        font-size:25px;
+    }
+    .grand-opening-container img{
+        height:175px;
+    }
+}
+@media only screen and (max-width:350px){
+    .grand-opening-container img{
+        height:150px;
+    }
+    .grand-opening-container{height:80px;}
 }
