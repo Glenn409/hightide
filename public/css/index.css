@@ -1853,7 +1853,7 @@ input{
         padding-right:0px;
         justify-content: space-between;
     }
-    .drink-section, .drink-col-mid{
+    .drink-section, .drink-col-mid,.food-section, .food-col-mid{
         flex-direction: column;
     }
     .menu-item h1{

@@ -379,3 +379,22 @@ $('.frozen-mobile-button').on('click',function(){
 $('.beer-mobile-button').on('click',function(){
     $('.beer-mobile').slideToggle(400, 'linear')
 })
+
+$('.small-bites-mobile-button').on('click',function(){
+    $('.small-bites-mobile').slideToggle(400, 'linear')
+})
+
+$('.handhelds-mobile-button').on('click',function(){
+    $('.handhelds-mobile').slideToggle(400,'linear')
+})
+$('.bowls-mobile-button').on("click",function(){
+    $('.bowls-mobile').slideToggle(400,'linear')
+})
+
+$('.salads-mobile-button').on('click',function(){
+    $('.salads-mobile').slideToggle(400,'linear')
+})
+
+$('.sides-mobile-button').on('click',function(){
+    $('.sides-mobile').slideToggle(400,'linear')
+})
