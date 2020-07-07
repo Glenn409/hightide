@@ -1769,6 +1769,9 @@ input{
     .second-row-right{
         width:80%;
     }
+    .bold-subtitle{
+        margin-bottom:15px;
+    }
     .footer-row-1{
         width: 100%;
         padding-top:20px;
