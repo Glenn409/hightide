@@ -163,18 +163,20 @@ $('.drink').on('click',function(){
     // }
         if($('.dropdown-content').css("margin-left") == "0px")
         {
-            $('.dropdown-content').animate({"margin-left": '-=160'},300);
+            $('.dropdown-content').animate({"margin-left": '-=160'},200);
             // $('.dropdown-icon').removeClass('fa-times-thin')
             // $('.dropdown-icon').addClass("fa-bars")
         }
         else if ($('.dropdown-content').css('margin-left') == '-160px')
         {
-            $('.dropdown-content').animate({"margin-left": '+=160'},300);
+            $('.dropdown-content').animate({"margin-left": '+=160'},200);
         }
     
     
     });
-
+$('.dropdown-content li a').click(function(){
+    $(this).effect('highlight')
+})
 $('.main-link').on('click',function(){
     $('.dropdown-content li a').removeClass('selected');
 })
@@ -182,7 +184,7 @@ $('.main-link').on('click',function(){
 $('.outside-link').on('click',function(e){
     e.stopPropagation();
     if($('.dropdown-content').css("margin-left") == "0px"){
-        $('.dropdown-content').animate({"margin-left": '-=160'},300);
+        $('.dropdown-content').animate({"margin-left": '-=160'},200);
     }
 
 })
@@ -194,7 +196,7 @@ $('#mobile-home').on('click',function(e){
     $('.contact-container').hide()
     $('.home-container').show()
     if($('.dropdown-content').css("margin-left") == "0px"){
-        $('.dropdown-content').animate({"margin-left": '-=160'},300);
+        $('.dropdown-content').animate({"margin-left": '-=160'},200);
     }
     // console.log($('.dropdown-content').css("margin-left"))
 
@@ -208,7 +210,7 @@ $('#mobile-events').on('click',function(e){
     $('.contact-container').hide()
     $('.event-container').show()
     if($('.dropdown-content').css("margin-left") == "0px"){
-        $('.dropdown-content').animate({"margin-left": '-=160'},300);
+        $('.dropdown-content').animate({"margin-left": '-=160'},200);
     }
 
     // $(".dropdown-content").slideToggle(220);
@@ -241,7 +243,7 @@ $('#mobile-menu').on('click',function(e){
         $('#drinkheader').text('Drinks')
     }
     if($('.dropdown-content').css("margin-left") == "0px"){
-        $('.dropdown-content').animate({"margin-left": '-=160'},300);
+        $('.dropdown-content').animate({"margin-left": '-=160'},200);
     }
 
     // $(".dropdown-content").slideToggle(220);
@@ -254,7 +256,7 @@ $('#mobile-contact').on("click",function(e){
     $('.menu-container').hide()
     $('.contact-container').show()
     if($('.dropdown-content').css("margin-left") == "0px"){
-        $('.dropdown-content').animate({"margin-left": '-=160'},300);
+        $('.dropdown-content').animate({"margin-left": '-=160'},200);
     }
 
     // $(".dropdown-content").slideToggle(220);
