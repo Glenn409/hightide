@@ -1263,6 +1263,9 @@ textarea{
     margin-bottom:10px;
     font: size 22px;
 }
+.dropdown-content li a:active{
+    background-color: rgba(0,255,255 0.8)
+}
 .dropdown-content li {
     display: inline;
 }

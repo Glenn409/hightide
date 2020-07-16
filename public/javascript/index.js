@@ -174,9 +174,10 @@ $('.drink').on('click',function(){
     
     
     });
-// $('.dropdown-content li a').click(function(){
-//     $(this).effect('highlight')
-// })
+$('.dropdown-content li a').click(function(){
+    console.log($(this))
+    $(this).effect('highlight')
+})
 $('.main-link').on('click',function(){
     $('.dropdown-content li a').removeClass('selected');
 })
