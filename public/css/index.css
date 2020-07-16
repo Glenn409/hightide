@@ -12,6 +12,19 @@ body {
 .w-fix{
     font-family: Cambria, sans-serif !important;
 }
+.event-header{
+    background-color:#1E1E1E;
+    color:white;
+    text-align: center;
+    font-size:24px;
+    font-family: 'minya_nouvelleregular',sans-serif;
+    padding-top:10px;
+    padding-bottom:10px;
+    display:none;
+}
+/* .mini-calendar{
+    display:none;
+} */
 .mobile-menu{
     display:none;
 }
@@ -1762,7 +1775,9 @@ input{
     .imgbox{
         display:flex;
     }
-
+    .live-events, .home-menu-box{
+        cursor:pointer;
+    }
     .second-row-left img{
         display:none;
     }
@@ -1900,6 +1915,16 @@ input{
     }
 }
 @media only screen and (max-width:500px){
+    .full-calendar{
+        display:none;
+    }
+    .event-header{
+        display:flex;
+        justify-content: center;
+    }
+    /* .mini-calendar{
+        display:flex;
+    } */
     .home-img-container{
         width:90%;
     }
