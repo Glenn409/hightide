@@ -148,7 +148,7 @@ $('.drink').on('click',function(){
 //     }
 //   });
 
-  $(".dropdown-icon").click(function(e){
+  $(".mobile-button-helper").click(function(e){
     e.preventDefault();
     e.stopPropagation();
     $('.dropdown-content').slideToggle('fast')

@@ -363,6 +363,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width:80%;
+    height:100%;
 }
 .top-nav-right{
     display:flex;
@@ -389,6 +390,12 @@ footer {
     padding-right:0px !important;
     margin-right:0px !important;
     border:none !important;
+}
+
+.mobile-button-helper{
+    height:100%;
+    display:flex;
+    align-items: center;
 }
 .top-logo{
     z-index:1;
@@ -433,6 +440,11 @@ footer {
 }
 .top-nav-left, .top-nav-right{
     height:25px;
+}
+.top-nav-left-mobile{
+    height:100%;
+    display:flex;
+    align-items: center;
 }
 .home-img-container{
     position:relative;
