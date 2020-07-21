@@ -166,7 +166,7 @@ $('#mobile-menu-form').on('click',function(e){
         $('.small-bites-button').addClass('menu-cursor-hover')
     }
 })
-$('#mobile-menu-form').change(function(){
+$('#mobile-menu-form').select(function(){
     if($(this).val() === 'food'){
         $('.menu-section-container').hide()
         $('.food-menu').hide()
