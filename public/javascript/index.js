@@ -126,6 +126,40 @@ $('.drink').on('click',function(){
     $('.classics').show();
     $('.classics-button').addClass('menu-cursor-hover')
 })
+if($('#mobile-menu-form').val() === 'drinks'){
+    $('.menu-section-container').hide()
+    $('.food-menu').hide()
+    $('.menu-sub-header-food').hide()
+    $('.menu-sub-header-drinks').show()
+    $('.drink-menu').show()
+    $('.drink').css("background-color", '#1e1e1e')
+    $('.food').css('background-color', 'rgb(44, 44, 44)')
+    $('.sub-header-button').removeClass('menu-cursor-hover')
+    $('.sub-header-button').css("color",'white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+
+    $('.menu-section-container').hide()
+    $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
+    $('#drinkheader').css('border-bottom','4px solid #ff3030') 
+    $('.classics').show();
+    $('.classics-button').addClass('menu-cursor-hover')
+}
+if($('#mobile-menu-form').val() === 'food'){
+    $('#drinkheader').css('border-bottom','4px solid rgb(44, 44, 44) ')
+    $('.food').css('background-color','#1e1e1e')
+    $('.drink').css('background-color', 'rgb(44, 44, 44)')
+    $('.drink-menu').hide()
+    $('.food-menu').show()
+    $('.menu-sub-header-food').show();
+    $('.menu-sub-header-drinks').hide()
+    $('#foodheader').css('border-bottom','4px solid #ff3030')
+    $('.menu-section-container').hide()
+    $('.sub-header-button').removeClass('menu-cursor-hover')
+    $('.sub-header-button').css("color",'white')
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+    $('.small-bites').show();
+    $('.small-bites-button').addClass('menu-cursor-hover')
+}
 $('#mobile-menu-form').on('click',function(e){
     e.preventDefault()
     
