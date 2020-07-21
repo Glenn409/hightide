@@ -391,6 +391,11 @@ $('.sub-header-button').on('click',function(){
         $(this).css("color",'black')
         $(this).css("background-color",'white')
     }
+     if($(this).hasClass('mobile') === true) {
+         $(this).effect('highlight',{color: '#454545'},200)
+     }
+
+        
 })
 $(".sub-header-button").on('mouseover', function () {
     if($(this).hasClass('mobile') === false){
