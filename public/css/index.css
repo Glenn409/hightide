@@ -1265,7 +1265,7 @@ textarea{
 .dropdown-content li a:active, .dropdown-content li a:hover{
     background-color: #353535;
     /* color:black; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 .dropdown-content li {
     display: inline;
@@ -1609,13 +1609,13 @@ input{
     }
     select{
         /* width:100px; */
-        border-radius:20px;        
+        border-radius:10px;        
         font-size:22px;
         /* font-weight: bold; */
-        color:white;
+        /* color:white; */
         border:none;
         /* border-bottom:2px solid white; */
-        background-color:#1e1e1e;
+        /* background-color:#1e1e1e; */
         border:3px solid #363636;
         text-align: center;
         font-family: 'minya_nouvelleregular',sans-serif;
@@ -1690,6 +1690,9 @@ input{
         border:2px solid #353535;
         margin-bottom:10px;
         justify-content: space-between;
+    }
+    .sub-header-button:active{
+        background-color: #353535;
     }
     .sub-header-button h1{
         padding-left:20px;
