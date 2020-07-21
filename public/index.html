@@ -194,19 +194,30 @@
                 <div class="menu-display-container">
                     <!-- MENU DRINK/FOOD TAB-->
                     <div id='menu-header-container'>
-                        <div class='menu-header food'>
+                        <div class='menu-header food desktop'>
                             <p id='foodheader'>Food <span class='hide-menu-word'>Menu</span></p>
                         </div>
-                        <div class='menu-header drink'>
+                        <div class='menu-header drink desktop'>
                             <p id='drinkheader'>Drink <span class='hide-menu-word'>Menu</span></p>
+                        </div>
+                        <div class='menu-header mobile'>
+                            <p id='foodheader'>High Tide's Menu</p>
+                            <div class='menu-form'>
+                                <label for='mobile-menu-form'>Menu Type: </label>
+                                <select id="mobile-menu-form" name="mobile-menu-form">
+                                    <option value="food" selected>Food</option>
+                                    <option value="drinks">Drinks</option>
+                                  </select>
+                            </div>
                         </div>
                     </div>
                     <div class='menu-sub-header-food'>
                         <div class='sub-header-button small-bites-button desktop'>
                             <h1>Small Bites</h1>
                         </div>
-                        <div class='sub-header-button small-bites-mobile-button mobile'>
+                        <div class='sub-header-button small-bites-mobile-button mobile change-arrow'>
                             <h1>Small Bites</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container small-bites-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'/>
@@ -271,8 +282,9 @@
                         <div class='sub-header-button handhelds-button desktop'>
                             <h1>Handhelds</h1>
                         </div>
-                        <div class='sub-header-button handhelds-mobile-button mobile'>
+                        <div class='sub-header-button handhelds-mobile-button mobile change-arrow'>
                             <h1>Handhelds</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container handhelds-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -310,8 +322,9 @@
                         <div class='sub-header-button bowls-button desktop'>
                             <h1>Bo<span class='w-fix'>w</span>ls</h1>
                         </div>
-                        <div class='sub-header-button bowls-mobile-button mobile'>
+                        <div class='sub-header-button bowls-mobile-button mobile change-arrow'>
                             <h1>Bo<span class='w-fix'>w</span>ls</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container bowls-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -341,8 +354,9 @@
                         <div class='sub-header-button salads-button desktop'>
                             <h1>Salads</h1>
                         </div>
-                        <div class='sub-header-button salads-mobile-button mobile'>
+                        <div class='sub-header-button salads-mobile-button mobile change-arrow'>
                             <h1>Salads</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container salads-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -382,8 +396,9 @@
                         <div class='sub-header-button sides-button desktop'>
                             <h1>Sides / Desserts</h1>
                         </div>
-                        <div class='sub-header-button sides-mobile-button mobile'>
+                        <div class='sub-header-button sides-mobile-button mobile change-arrow'>
                             <h1>Sides / Desserts</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container sides-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -411,8 +426,9 @@
                         <div class='sub-header-button classics-button desktop'>
                             <h1>Classics</h1>                           
                         </div>
-                        <div class='sub-header-button classics-mobile-button mobile'>
-                            <h1>Classics</h1>                           
+                        <div class='sub-header-button classics-mobile-button mobile change-arrow'>
+                            <h1>Classics</h1>            
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>               
                         </div>
                         <div class='menu-content-container classics-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -464,8 +480,9 @@
                         <div class='sub-header-button hand-crafted-seltzers-button desktop'>
                             <h1>Hand Crafted Seltzers</h1>
                         </div>
-                        <div class='sub-header-button hand-crafted-seltzers-mobile-button mobile'>
-                            <h1>Hand Crafted Seltzers</h1>                         
+                        <div class='sub-header-button hand-crafted-seltzers-mobile-button mobile change-arrow'>
+                            <h1>Hand Crafted Seltzers</h1>     
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>                    
                         </div>
                         <div class='menu-content-container hand-crafted-seltzers-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -503,8 +520,9 @@
                         <div class='sub-header-button margaritas-button desktop'>
                             <h1>Margaritas</h1>
                         </div>
-                        <div class='sub-header-button mobile margaritas-mobile-button'>
+                        <div class='sub-header-button mobile margaritas-mobile-button change-arrow'>
                             <h1>Margaritas</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container margaritas-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -533,8 +551,9 @@
                         <div class='sub-header-button mules-button desktop'>
                             <h1>Mules</h1>
                         </div>
-                        <div class='sub-header-button mobile mules-mobile-button'>
+                        <div class='sub-header-button mobile mules-mobile-button change-arrow'>
                             <h1>Mules</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container mules-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -567,8 +586,9 @@
                         <div class='sub-header-button mojitos-button desktop'>
                             <h1>Mojitos</h1>
                         </div>
-                        <div class='sub-header-button mobile mojitos-mobile-button'>
+                        <div class='sub-header-button mobile mojitos-mobile-button change-arrow'>
                             <h1>Mojitos</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container mojitos-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -597,8 +617,9 @@
                         <div class='sub-header-button frozen-button desktop'>
                             <h1>Frozens</h1>
                         </div>
-                        <div class='sub-header-button mobile frozen-mobile-button'>
+                        <div class='sub-header-button mobile frozen-mobile-button change-arrow'>
                             <h1>Frozens</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container frozen-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -646,8 +667,9 @@
                         <div class='sub-header-button beer-button desktop'>
                             <h1>Beer</h1>
                         </div>
-                        <div class='sub-header-button mobile beer-mobile-button'>
+                        <div class='sub-header-button mobile beer-mobile-button change-arrow'>
                             <h1>Beer</h1>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </div>
                         <div class='menu-content-container beer-mobile mobile-menu'>
                             <img src='/images/rhgirlblank.jpg'>
@@ -1085,11 +1107,10 @@
                     </div>
                 </div>
 
-            <div class='redheads-row'>
+            <!-- <div class='redheads-row'>
                 <div class='transparent-container'>
                     <div class='redheads-header'>
                         <image src='images/redheadlogotrans.png'/>
-                        <!-- <h1>Looking for something more?</h1> -->
                     </div>
                     <div class='redheads-info'>
                         <div class='redheads-left'>
@@ -1108,26 +1129,8 @@
                     <div class='fix-button-location'>
                         <button id='redheads-redirect-button'><a target='_blank' href='http://redheadlakesidegrill.businesscatalyst.com/menu.html'>Menu</a></button>
                     </div>
-
-                    <!-- <div class='redheads-content'>
-                        <div class='redhead-content-container red-img1'>
-                            <div class="redheads-banner">
-                                <p>Great Food</p>
-                            </div>
-                        </div>
-                        <div class='redhead-content-container red-img2'>
-                            <div class="redheads-banner">
-                                <p>Sports</p>
-                            </div>
-                        </div>
-                        <div class='redhead-content-container red-img3'>
-                            <div class='redheads-banner'>
-                                <p>Pool and Pool Bar</p>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class='contact-container'>
             <div class='contact-left'>
@@ -1234,8 +1237,8 @@
                 </div>
                 <div id='footer-hours'>
                     <h1>Hours</h1>
-                    <p>Mon-Thu: 11am-10pm</p>
-                    <p>Fri-Sun: 11am-11pm</p>
+                    <p>Mon-Thu: 11am-9pm</p>
+                    <p>Fri-Sun: 11am-9pm</p>
                     <p>Phone: 573-693-1525</p>
                 </div>
             </div>
@@ -1247,28 +1250,28 @@
                     <div id='footer-address'>
                         <h1>Location</h1>
                         <p><span id='footer-twenty'>21</span> Mile Marker</p>
-                        <p>1700 Yacht Club Drive</p>
+                        <p>1675 Yacht Club Drive</p>
                         <p>Osage Beach, MO 65065</p>
                     </div>
 
                     <div id='footer-hours'>
                         <h1>Hours</h1>
-                        <p>Mon-Thu: 11am-10pm</p>
-                        <p>Fri-Sun: 11am-11pm</p>
+                        <p>Mon-Sun: 11am-9pm</p>
+                        <!-- <p>Fri-Sun: 11am-9pm</p> -->
                         <p>Phone: 573-693-1525</p>
                     </div>
                 </div>
                 <div class='footer-row-2'>
                     <div id='socials'>
                         <div class='footer-links-social'>
-                            <a class="social-button facebook" href="https://www.facebook.com/RHGrillandYachtClub/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+                            <a class="social-button facebook" href="https://www.facebook.com/hightidepool/" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
                         </div>
-                        <div class='footer-links-social'>
+                        <!-- <div class='footer-links-social'>
                             <a class="social-button twitter" href="https://twitter.com/RedheadGrill" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
                         </div>
                         <div class='footer-links-social'>
                             <a class='social-button tripadvisor' href='https://www.tripadvisor.com/Restaurant_Review-g44751-d8490961-Reviews-Redhead_Lakeside_Grill-Osage_Beach_Lake_of_the_Ozarks_Missouri.html' target='_blank'><i class="fab fa-tripadvisor"></i>Tripadvisor</a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class='footer-otherlinks'>
                         <div class='footer-sister-links'>

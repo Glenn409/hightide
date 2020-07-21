@@ -1263,7 +1263,7 @@ textarea{
     font: size 22px;
 }
 .dropdown-content li a:active, .dropdown-content li a:hover{
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #353535;
     /* color:black; */
     border-radius: 10px;
 }
@@ -1571,6 +1571,60 @@ input{
     }
 }
 @media only screen and (max-width:767.98px){
+    .menu-header{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom:10px;
+        height:100%;
+        font-size:40px;
+        border:none;
+
+    }
+    .menu-sub-header-food,.menu-sub-header-drinks{
+        border:none;
+        padding-top:0px;
+    }
+    #foodheader{
+        width:300px;
+    }
+    #menu-header-container{
+        height:100%;
+        border:none;
+    }
+    .menu-form{
+        width:100%;
+        color:white;
+        font-size:22px;
+        display:flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-top:5px;
+        padding-bottom:5px;
+        
+    }
+    .menu-form label{
+        padding-right:15px;
+        font-size:24px;
+
+    }
+    select{
+        /* width:100px; */
+        border-radius:20px;        
+        font-size:22px;
+        /* font-weight: bold; */
+        color:white;
+        border:none;
+        /* border-bottom:2px solid white; */
+        background-color:#1e1e1e;
+        border:3px solid #363636;
+        text-align: center;
+        font-family: 'minya_nouvelleregular',sans-serif;
+    }
+    select#mobile-menu-form{
+        text-align: center;
+        padding:5px 30px 5px 20px;
+        
+    }
     #drinkheader,#foodheader{
         margin-top:10px;
         margin-bottom:10px;
@@ -1618,19 +1672,35 @@ input{
         flex-direction:column;
         height:inherit;
         margin-top:0px;
-        padding-bottom:10px;
+        padding-bottom:0px;
     }
     .menu-content-container{
+        margin-bottom:10px;
         display:none;
+    }
+    .bold-subtitle, .handheld-subtitle{
+        font-weight: bold;
     }
     .sub-header-button{
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6), 0 4px 15px 0 rgba(0, 0, 0, .6);
         height:50px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius:10px;
+        display:flex;
+        border:2px solid #353535;
+        margin-bottom:10px;
+        justify-content: space-between;
     }
     .sub-header-button h1{
+        padding-left:20px;
         font-size:24px;
+    }
+    .sub-header-button i{
+        padding-right:20px;
+        font-size:24px;
+    }
+    .sub-header-button i{
+        border:none;
     }
     .home-second-row{
         height:425px;
@@ -1926,6 +1996,12 @@ input{
     .beer-list, .food-list{
         width:100%;
     }
+    .food-list h1{
+        padding-bottom:0px;
+    }
+    .food-list p{
+        font-size: 18px;
+    }
     .beer-list h1, .food-list h1{
         border-bottom:none;
     }
@@ -1996,12 +2072,7 @@ input{
     .grand-opening-container p {
         font-size:30px;
     }
-    #menu-header-container{
-        height:80px;
-    }
-    #drinkheader,#foodheader{
-        font-size:30px;
-    }
+
         
     .hide-menu-word{
         display:none;
