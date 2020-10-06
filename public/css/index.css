@@ -2065,6 +2065,9 @@ input{
     .home-content-box{
         width:95%;
     }
+    .banner {
+        height:300px;
+    }
     .banner1{
         background-size:140%;
         background-position: 70% 90%;
@@ -2116,7 +2119,7 @@ input{
 }
 @media only screen and (max-width:450px){
     .banner1{
-        background-size:200%;
+        background-size:130%;
     }
     .banner3{
         background-size:200%;
@@ -2151,7 +2154,7 @@ input{
 }
 @media only screen and (max-width:400px){
     .banner1{
-        background-size:190%;
+        background-size:150%;
     }
     .banner2{
         background-size:140%;
