@@ -2039,6 +2039,7 @@ input{
 @media only screen and (max-width:550px){
     .banner1{
         background-size:150%;
+        background-image: url('../images/Sky-11.webp'); 
     }
     .banner3{
         background-size:150%;
@@ -2115,7 +2116,7 @@ input{
 }
 @media only screen and (max-width:450px){
     .banner1{
-        background-size:180%;
+        background-size:200%;
     }
     .banner3{
         background-size:200%;
@@ -2150,7 +2151,7 @@ input{
 }
 @media only screen and (max-width:400px){
     .banner1{
-        background-size:170%;
+        background-size:190%;
     }
     .banner2{
         background-size:140%;
