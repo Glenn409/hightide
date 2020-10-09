@@ -2041,8 +2041,12 @@ input{
         background-size:150%;
         background-image: url('../images/Sky-11-mobile.jpg'); 
     }
+    .banner2{
+        background-image: url('../images/people-mobile.jpg');
+    }
     .banner3{
         background-size:150%;
+        background-image:url('../images/Sky-6-mobile.jpg')
     }
     .banner{
         height:350px;
