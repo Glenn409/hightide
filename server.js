@@ -5,8 +5,9 @@ const bodyParser = require('body-parser')
 const nodemailer = require("nodemailer");
 require('dotenv').config()
 const port = process.env.PORT || 3000;
+const compression = require('compression');
 
-
+app.use(compression());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname, 'public')));
 
