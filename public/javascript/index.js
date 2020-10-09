@@ -2,7 +2,7 @@
 // $(function() {
 //     $('.banner-lazy').Lazy();
 //     console.log('load')
-// });
+
 $(document).ready(function(){
     //----firstfooter img slider
     setInterval(function() { 
