@@ -252,13 +252,13 @@ $('.change-arrow').on('click',function(e){
     // }
         if($('.dropdown-content').css("margin-left") == "0px")
         {
-            $('.dropdown-content').animate({"margin-left": '-=350'},250);
+            $('.dropdown-content').animate({"margin-left": '-=350'},200);
             // $('.dropdown-icon').removeClass('fa-times-thin')
             // $('.dropdown-icon').addClass("fa-bars")
         }
         else if ($('.dropdown-content').css('margin-left') == '-350px')
         {
-            $('.dropdown-content').animate({"margin-left": '+=350'},250);
+            $('.dropdown-content').animate({"margin-left": '+=350'},200);
         }
     
     

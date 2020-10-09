@@ -485,7 +485,7 @@ footer {
     font-family: sans-serif;
 }
 .home-img-container img{
-    max-width:100%;
+    width:100%;
     height:100%;
 
 }
@@ -1427,7 +1427,7 @@ input{
 
     }
     .home-img-container{
-        width:75%;
+        width:85%;
     }
     .menu-content-container img {
         left:15%;
