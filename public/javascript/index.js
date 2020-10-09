@@ -428,13 +428,6 @@ $('.sub-header-button').on('click',function(){
     $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.sub-header-button').css('color','white')
     $('.sub-header-button').css("background-color",'#1e1e1e')
-    if($(this).hasClass('mobile') === false){
-        $(this).css("color",'black')
-        $(this).css("background-color",'white')
-    }
-     if($(this).hasClass('mobile') === true) {
-         $(this).effect('highlight',{color: '#454545'},200)
-     }
 
         
 })
@@ -528,7 +521,7 @@ $('.beer-mobile-button').on('click',function(){
 })
 
 $('.small-bites-mobile-button').on('click',function(){
-    $('.small-bites-mobile').slideToggle(400, 'linear')
+    $('.small-bites-mobile').slideToggle(400,'linear')
 })
 
 $('.handhelds-mobile-button').on('click',function(){
