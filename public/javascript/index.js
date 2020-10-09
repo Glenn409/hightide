@@ -134,7 +134,7 @@ $('.drink').on('click',function(){
 // $('#option-food').on('click',function(e){
 //     console.log('food lcicked')
 // })
-$('#mobile-menu-form').on('click',function(e){
+$('#mobile-menu-form').change(function(e){
     // e.preventDefault()
     
     if($('#mobile-menu-form').val() === 'drinks'){
