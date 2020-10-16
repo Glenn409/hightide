@@ -26,9 +26,7 @@ $(document).ready(function(){
     $('.small-bites').show()
     $('.small-bites-button').css('color','black')
     $(".small-bites-button").css("background",'white')
-    // $('.classics').show();
-    // $('.classics-button').css('color','white')
-    // $('.classics-button').css("background-color",'#1e1e1e')
+
     //---a interval for rotating banners at the top of page
     let num = 1;
     setInterval(function(){
@@ -131,49 +129,7 @@ $('.drink').on('click',function(){
     $('.classics').show();
     $('.classics-button').addClass('menu-cursor-hover')
 })
-// $('#option-food').on('click',function(e){
-//     console.log('food lcicked')
-// })
 
-// $('#mobile-menu-form').change(function(e){
-//     e.preventDefault()
-//     console.log($('#mobile-menu-form').val())
-//     if($('#mobile-menu-form').val() === 'drinks'){
-//         $('.menu-section-container').hide()
-//         $('.food-menu').hide()
-//         $('.menu-sub-header-food').hide()
-//         $('.menu-sub-header-drinks').show()
-//         $('.drink-menu').show()
-//         $('.drink').css("background-color", '#1e1e1e')
-//         $('.food').css('background-color', 'rgb(44, 44, 44)')
-//         $('.sub-header-button').removeClass('menu-cursor-hover')
-//         $('.sub-header-button').css("color",'white')
-//         $('.sub-header-button').css("background-color",'#1e1e1e')
-    
-//         $('.menu-section-container').hide()
-//         $('#foodheader').css('border-bottom','4px solid rgb(44, 44, 44)')
-//         $('#drinkheader').css('border-bottom','4px solid #ff3030') 
-//         $('.classics').show();
-//         $('.classics-button').addClass('menu-cursor-hover')
-//     }
-
-//     if($('#mobile-menu-form').val() === 'food'){
-//         $('#drinkheader').css('border-bottom','4px solid rgb(44, 44, 44) ')
-//         $('.food').css('background-color','#1e1e1e')
-//         $('.drink').css('background-color', 'rgb(44, 44, 44)')
-//         $('.drink-menu').hide()
-//         $('.food-menu').show()
-//         $('.menu-sub-header-food').show();
-//         $('.menu-sub-header-drinks').hide()
-//         $('#foodheader').css('border-bottom','4px solid #ff3030')
-//         $('.menu-section-container').hide()
-//         $('.sub-header-button').removeClass('menu-cursor-hover')
-//         $('.sub-header-button').css("color",'white')
-//         $('.sub-header-button').css("background-color",'#1e1e1e')
-//         $('.small-bites').show();
-//         $('.small-bites-button').addClass('menu-cursor-hover')
-//     }
-// })
 $(document).on('change','#mobile-menu-form',function(){
     if($(this).val() === 'drinks'){
         $('.menu-section-container').hide()
@@ -219,40 +175,12 @@ $('.change-arrow').on('click',function(e){
         $(this).find('i').removeClass('fa-angle-up')
     }
 })
-// $('#foodheader').hover(function(){
-//     $(this).css("border-bottom",'4px solid #ff3030').fadeIn(500)
-// }, function(){
-//     $(this).css('border-bottom', '4px solid #1e1e1e')
-// })
-//------------------MOBILE DROPDOWN --------------
-
-// $(document).click(function(e){
-//     e.preventDefault();
-//     e.stopPropagation();
-//     var isHidden = $('.dropdown-content').is(':hidden')
-//     console.log(isHidden)
-//     if(isHidden){
-//         $('.dropdown-icon').on('click',function(){
-//             $('.dropdown-content').slideToggle(220)
-//         })
-//     } else {
-//         // $('.dropdown-content').slideToggle(220)
-//     }
-//   });
 
   $(".mobile-button-helper").click(function(e){
       console.log($('.dropdown-content').css("margin-left"))
     e.preventDefault();
     e.stopPropagation();
-    // $('.dropdown-icon').removeClass('fa-bars')
-    // $('.dropdown-icon').addClass("fa-times-thin")
-    // $('.dropdown-content').slideToggle('fast')
-    // var isVisible = $('.dropdown-content').is(':visible')
-    // if(isVisible){
-    //     $(document).on('click',function(){
-    //         $(".dropdown-content").slideUp('fast')
-    //     })
-    // }
+
         if($('.dropdown-content').css("margin-left") == "0px")
         {
             $('.dropdown-content').animate({"margin-left": '-=350'},200);
