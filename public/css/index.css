@@ -561,7 +561,7 @@ footer {
     background-size:100%;
     background-position: 0% 20%;
     width:100%;
-    height:500px;
+    /* height:500px; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -2091,7 +2091,7 @@ input{
         width:100%;
     }
     .home-entertainment-row{
-        height:400px;
+        /* height:400px; */
     }
     video{
         width:85%;
