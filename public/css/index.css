@@ -2090,10 +2090,10 @@ input{
     .home-entertainment-row{
         /* height:400px; */
     }
-    /* video{
-        width:85%;
-        height:auto;
-    } */
+    video{
+        height:200px;
+        width:auto;
+    }
     #footer-hours p,#footer-address p{
         font-size:14px;
     }
