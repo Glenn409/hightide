@@ -556,6 +556,7 @@ footer {
     
 }
 .home-entertainment-row{
+    margin-bottom:20px;
     background-image: url('../images/concert1.jpg');
     background-size:100%;
     background-position: 0% 20%;
