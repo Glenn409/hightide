@@ -569,7 +569,7 @@ footer {
 
 }
 .home-entertainment-row video {
-    background-color: rbga(30,30,30,0.8)
+    background-color: rbga(30,30,30,0.8);
     margin-top:40px;
     width: 80%;
     height:auto;
