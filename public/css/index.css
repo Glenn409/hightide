@@ -19,6 +19,13 @@ body {
 .w-fix{
     font-family: Cambria, sans-serif !important;
 }
+.memorial-weekend-menu {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-family: 'minya_nouvelleregular',sans-serif;
+    font-size:24px;
+}
 video {
     width:480px;
     height:360px;

@@ -357,10 +357,9 @@ $('.sub-header-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.sub-header-button').css('color','white')
-    $('.sub-header-button').css("background-color",'#1e1e1e')
-
-        
+    $('.sub-header-button').css("background-color",'#1e1e1e')  
 })
+
 $(".sub-header-button").on('mouseover', function () {
     if($(this).hasClass('mobile') === false){
         $(this).addClass('menu-cursor-hover')
@@ -401,7 +400,10 @@ $('.frozen-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.frozen').show()
 })
-
+$('.redbull-button').on('click',function(){
+    $('.menu-section-container').hide()
+    $('.redbull').show()
+})
 $('.beer-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.beer').show()
@@ -446,6 +448,10 @@ $('.mojitos-mobile-button').on('click',function(){
 $('.frozen-mobile-button').on('click',function(){
     $('.frozen-mobile').slideToggle(400, 'linear')
 })
+$('.redbull-mobile-button').on('click',function(){
+    $('.redbull-mobile').slideToggle(400,'linear')
+})
+
 $('.beer-mobile-button').on('click',function(){
     $('.beer-mobile').slideToggle(400, 'linear')
 })
