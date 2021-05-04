@@ -357,7 +357,12 @@ $('.sub-header-button').on('click',function(){
     $('.menu-section-container').hide()
     $('.sub-header-button').removeClass('menu-cursor-hover')
     $('.sub-header-button').css('color','white')
-    $('.sub-header-button').css("background-color",'#1e1e1e')  
+    $('.sub-header-button').css("background-color",'#1e1e1e')
+    if($(this).hasClass('desktop') === true){
+        $(this).css('background-color', 'white')
+        $(this).css('color','black')
+    }  
+    
 })
 
 $(".sub-header-button").on('mouseover', function () {
