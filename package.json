@@ -24,7 +24,7 @@
     "jquery-lazy": "^1.7.11",
     "jquery-lazyload-any": "^0.3.1",
     "nodejs-nodemailer-outlook": "^1.2.3",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "path": "^0.12.7"
   },
   "devDependencies": {
