@@ -2036,6 +2036,10 @@ input{
         flex-direction: column;
         margin-bottom:80px;
     }
+    .tacostyle{
+        Color:black;
+        font-size:15px;
+    }
     .imgbox{
         display:flex;
     }
@@ -2207,6 +2211,36 @@ input{
     }
 }
 @media only screen and (max-width:500px){
+    .footer-row-1{
+        padding-bottom:0px;
+    }
+    #footer-hours h1, #footer-hours p,#footer-address p, #footer-address h1{
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #socials{
+        margin-bottom:30px;
+    }
+    .footer-row-2{
+        padding-bottom:50px;
+    }
+    .footer-row-2{
+        padding-top:0px;
+    }
+    .footer-row-1, .footer-row-2{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-row-1 div {
+        margin-bottom:30px;
+    }
+    .footer-sister-links{
+        text-align:center;
+    }
+
     .full-calendar{
         display:none;
     }
