@@ -997,7 +997,15 @@ h1.salad-choice{
     width:60%;
     font-size:18px;
 }
-
+.tacostyle{
+    color:black !important;
+    font-size:20px !important;
+    padding-top:15px !important;
+    padding-bottom:5px !important;
+}
+.taco-des{
+    padding-bottom:15px !important;
+}
 .food-content{
     width:90%;
     display:flex;
@@ -2035,10 +2043,6 @@ input{
         display:flex;
         flex-direction: column;
         margin-bottom:80px;
-    }
-    .tacostyle{
-        Color:black;
-        font-size:15px;
     }
     .imgbox{
         display:flex;
